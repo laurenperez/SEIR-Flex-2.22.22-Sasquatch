@@ -7,18 +7,20 @@ const { spaceId, accessToken } = process.env;
 module.exports = {
   siteMetadata: {
     title: 'SEIR Flex 2/22/2022 - "Sasquatch"',
-    author: 'Daniel Scott',
+    author: "Daniel Scott",
     currentYear: new Date().getFullYear(),
-    description: 'An interactive website for students currently enrolled in the General Assembly Software Engineering Immersive Remote Flex Program',
-    keywords: 'software engineer, software engineering, coding, javascript, html, css',
+    description:
+      "An interactive website for students currently enrolled in the General Assembly Software Engineering Immersive Remote Flex Program",
+    keywords:
+      "software engineer, software engineering, coding, javascript, html, css",
     navigationLinks: [
-      {title: 'Home', slug: '/'},
-      {title: 'Course Details', slug: '/course-details'},
+      { title: "Home", slug: "/" },
+      { title: "Course Details", slug: "/course-details" },
       // {title: 'Coding Challenges', slug: '/coding-challenges'},
     ],
     homeworkSubmissionLink: {
-      title: 'Submit Homework',
-      href: 'https://forms.gle/UJ8fwmUdLMDvkt1q8',
+      title: "Submit Homework",
+      href: "https://forms.gle/Hzzc53H3Ya8SsGvf6",
     },
   },
   plugins: [
@@ -27,7 +29,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    // TODO: need to figure out how to move to contentful 
+    // TODO: need to figure out how to move to contentful
     //{
     //   resolve: "gatsby-source-contentful",
     //   options: {
@@ -44,22 +46,22 @@ module.exports = {
     {
       resolve: `gatsby-plugin-html-attributes`,
       options: {
-        lang: `en`
-      }
+        lang: `en`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `page-content`,
-        path: `${__dirname}/src/page-content`
-      }
+        path: `${__dirname}/src/page-content`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `Course Materials`,
-        path: `${__dirname}/src/course-materials`
-      }
+        path: `${__dirname}/src/course-materials`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -134,21 +136,21 @@ module.exports = {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
               offsetY: `100`,
-            }
+            },
           },
           {
             resolve: `gatsby-plugin-scroll-indicator`,
             options: {
-              color: '#dc143c',
-              height: '4px',
+              color: "#dc143c",
+              height: "4px",
               zIndex: `9999`,
             },
           },
           {
-            resolve: `gatsby-remark-responsive-iframe`
+            resolve: `gatsby-remark-responsive-iframe`,
           },
-        ]
-      }
+        ],
+      },
     },
     `gatsby-plugin-catch-links`,
     {
@@ -176,13 +178,13 @@ module.exports = {
         start_url: `/`,
         background_color: `#222222`,
         theme_color: `#222222`,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`]
-      }
-    }
-  ]
-};
+        precachePages: [`/`],
+      },
+    },
+  ],
+}
