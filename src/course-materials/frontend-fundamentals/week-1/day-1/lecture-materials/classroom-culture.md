@@ -23,10 +23,10 @@ type: "lecture"
 
 ## Instructors
 
-- Daniel Scott - Instructor Lead
-- Joe Keohan - Instructor Lead
-- Swaroop Uprety - Instructional Associate (IA)
-- Mike Bocon - Instructional Associate (IA)
+- Lauren Perez - Instructor Lead (IL)
+- TBD - Instructor Lead (IL)
+- Yanny Castrillon  - Instructional Associate (IA)
+- Katie Pestotnik - Instructional Associate (IA)
 
 <br>
 <br>
@@ -44,7 +44,9 @@ type: "lecture"
 
 - Instructor Associate (IA)
 
-  - will give you feedback on your homework and score if it is complete or incomplete
+  - Labs
+  - Answer questions after class
+  - Gives feedback on homework and mark as complete or incomplete
 
 - Outcomes
   - Outcomes course content
@@ -70,12 +72,11 @@ type: "lecture"
 
 #### 6 channels
 
-- **`seirflex-928-classroom`**
-- **`seirflex-928-outcomes`**
-- **`seirflex-928-resources`**
-- **`seirflex-928-partytime`**
-- **`seirflex-928-homework`**
-- **`seirflex-928-recordings`**
+- **`seirflex-222-classroom`**
+- **`seirflex-222-outcomes`**
+- **`seirflex-222-resources`**
+- **`seirflex-222-partytime`**
+- **`seirflex-222-homework`**
 
 <br>
 <br>
