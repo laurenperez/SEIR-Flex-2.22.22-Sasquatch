@@ -1,0 +1,151 @@
+.nav-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  max-height: 5rem;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: "logo nav";
+  background-color: #222222;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: logo;
+  height: 5rem;
+  margin-bottom: 0;
+}
+
+.nav {
+  display: grid;
+  grid-area: nav;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-items: start;
+}
+.nav a {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: 0.5s;
+  text-decoration: none;
+  text-transform: uppercase;
+  animation: fadeIn 1800ms linear forwards;
+}
+.nav a:hover {
+  transform: scale(1.1);
+}
+
+.burger {
+  display: none;
+  grid-area: burger;
+  margin: 0 20px 0 0;
+  padding: 0;
+  justify-self: end;
+  font-size: 2.5rem;
+  border: none;
+  background: none;
+  outline: none;
+  transition: 0.1s;
+}
+
+.close {
+  font-size: 2rem;
+}
+
+.fadeOut {
+  animation: fadeOut 650ms linear forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 650ms linear forwards;
+}
+
+.rotate {
+  animation: spin 350ms ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);  
+  }
+  100% {
+    transform: rotate(360deg);  
+  }
+}
+
+@keyframes fadeIn {
+  0% { 
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% { 
+    opacity: 1; 
+  }
+  100% { 
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1065px) {
+  .nav-wrapper {
+    grid-template-areas: "logo burger" "nav nav";
+  }
+  .nav {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: none;
+    z-index: -1;
+    padding: 0;
+    background-color: #222222;
+    opacity: .95;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .nav a {
+      position: relative;
+      display: block;
+      padding: 1.2rem 0 1.2rem 0;
+      text-align: center;
+      margin: 0;
+      width: 100%;
+      border-top: .1rem solid #000000;
+  }
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .burger {
+    grid-area: burger;
+    color: #ffffff;
+    display: inline;
+  }
+}
+
+.navAnimation-enter {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: .3s cubic-bezier(0, 1, 0.5, 1);
+}
+.navAnimation-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 1300ms, transform 350ms;
+}
+.navAnimation-exit {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.navAnimation-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 20ms, transform 350ms;
+}

@@ -1,0 +1,30 @@
+.modalContainer {
+    button {
+        float: right;
+    }
+}
+
+
+.timer {
+    color: crimson;
+    margin: 5rem 0;
+    font-size: 3rem;
+    font-family: monospace;
+    text-align: center;
+  }
+
+.controls {
+    * {
+        margin-left: .5rem;
+    }
+}
+
+
+.timerControls {
+    animation: fadeIn 800ms linear forwards;
+}
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
