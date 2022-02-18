@@ -6,19 +6,18 @@ title: "Course Details"
 
 <br>
 <br>
-<br>
 
 ## Schedule and Holidays
 
 - Start date: 02/22/2022
 - End date: 08/17/2022
 - Tuesday & Wednesday 6:30pm - 10:45pm PST
-- (Every Other) Thursday 6:30pm - 8:30pm PST
-- Sat 10:00am - 6:00pm PST
+- (Every other) Thursday 6:30pm - 8:30pm PST
+- Saturday 10:00am - 6:00pm PST
 - Holidays: 
-  -- May 28th
-  -- June 18th
-  -- July 2nd
+  * May 28th
+  * June 18th
+  * July 2nd
 
 <br>
 <br>
@@ -36,9 +35,10 @@ title: "Course Details"
 
 <br>
 <br>
-<br>
 
 ## Communication
+
+Class slack channels:
 
 - **`seirflex-222-classroom`**
 - **`seirflex-222-outcomes`**
@@ -103,16 +103,15 @@ You will be required to meet 80% completion of homework assignments at the end o
 <br>
 <br>
 
-## Lab/Homework Submission Procedure
+## Lab/Homework Submission Procedures
 
-<br>
 <br>
 <br>
 
 ### We will walk through this together the first time!
 
 - Depending on the assignment, your homework will be completed on [repl.it](https://repl.it/), [CodeSandbox](https://codesandbox.io/), or [GitHub](https://github.com/)
-- Fill out this [Google Form](https://forms.gle/Hzzc53H3Ya8SsGvf6) with a link for that specific homework. It will be the same Google Form for each homework
+- **Fill out this [Google Form](https://forms.gle/Hzzc53H3Ya8SsGvf6) with a link for that specific homework.** It will be the same Google Form for each homework
 - **Homework is due one week from the day it was assigned**
 - If homework is marked `incomplete`, you may be asked to re-submit it; a new timeline will be discussed how long you have to re-submit the homework
 - **Homework Feedback is generally administered within one week from the due date**
@@ -123,7 +122,9 @@ You will be required to meet 80% completion of homework assignments at the end o
 
 ## Managing your Projects
 
-- At the end of each unit, you will create a repo in your personal github for your project... i.e. Unit One - Project One, Unit Two - Project Two ...etc
+- At the end of each unit, you will create a repo in your personal github for your project i.e. -
+  Unit One - Project One 
+  Unit Two - Project Two  ...etc
 - Pushing your labs/homework to your personal github is not recommended
 
 <br>
@@ -133,14 +134,15 @@ You will be required to meet 80% completion of homework assignments at the end o
 
 <br>
 
-### Graduation Requirements
+### Minimum to Graduate
+
+<br>
 
 #### HOMEWORK
 
 Students must complete at least 80% on all homework assignments
 For an assignment to be marked complete, students must complete 100% of the minimum tasks specified in that assignment.
 
-<br>
 <br>
 <br>
 
@@ -151,13 +153,11 @@ For an assignment to be marked complete, students must complete 100% of the mini
 
 <br>
 <br>
-<br>
 
 #### ZERO ACCOUNT BALANCE
 
 - Students must have no outstanding balances due on their account
 
-<br>
 <br>
 <br>
 
@@ -177,7 +177,6 @@ Students who have fulfilled all of the above requirements will receive a digital
 
 Please feel free to contact your instructional team, or a member from student experience if you have questions regarding this policy.
 
-<br>
 <br>
 <br>
 

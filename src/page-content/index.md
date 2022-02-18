@@ -9,7 +9,6 @@ This website contains assignments and materials for General Assembly's Software 
 <br>
 <br>
 <br>
-<br>
 
 ## Curriculum Overview
 
