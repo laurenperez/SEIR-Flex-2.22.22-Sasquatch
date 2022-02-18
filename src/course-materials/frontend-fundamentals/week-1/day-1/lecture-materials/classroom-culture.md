@@ -70,13 +70,13 @@ type: "lecture"
 
 ### Slack
 
-#### 6 channels
+#### 5 channels
 
 - **`seirflex-222-classroom`**
 - **`seirflex-222-outcomes`**
-- **`seirflex-222-resources`**
 - **`seirflex-222-partytime`**
-- **`seirflex-222-homework`**
+- **`seirflex-222-resources`**
+- **`seirflex-222-help`**
 
 <br>
 <br>

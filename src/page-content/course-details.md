@@ -8,41 +8,18 @@ title: "Course Details"
 <br>
 <br>
 
-## Graduation Requirements
-
-You will be required to meet 80% completion of homework assignments at the end of each unit, and complete all project requirements. As this is an intense, fast-paced course, only 3 absences will be allowed.
-
-<br>
-<br>
-<br>
-
 ## Schedule and Holidays
 
 - Start date: 02/22/2022
 - End date: 08/17/2022
-- Tuesday & Wednesday 6pm - 11pm PST
-- Sat 10am - 6pm PST
-- Holidays: TBD
+- Tuesday & Wednesday 6:30pm - 10:45pm PST
+- (Every Other) Thursday 6:30pm - 8:30pm PST
+- Sat 10:00am - 6:00pm PST
+- Holidays: 
+  -- May 28th
+  -- June 18th
+  -- July 2nd
 
-<br>
-<br>
-<br>
-
-## Class Flow
-
-- Before class:
-  - Find the zoom link for the day sent out in the classroom slack channel
-  - Let IA know if you are running late!
-- In class:
-  - Review where we are in the course
-  - Work through lesson modules
-  - Preview upcoming projects/homework
-  - Fill out exit ticket
-- After class (optional):
-  - Complete assigned deliverables
-  - Ask additional questions on Slack
-
-<br>
 <br>
 <br>
 
@@ -50,11 +27,11 @@ You will be required to meet 80% completion of homework assignments at the end o
 
 | Name           | Role                    |
 | -------------- | ----------------------- |
-| Yvonne Dodd    | Outcomes Coach          |
 | Lauren Perez   | Lead Instructor         |
-| TBD    | Lead Instructor         |
+| Alex Merced    | Lead Instructor         |
 | Yanny Castrillon | Instructional Associate |
 | Katie Pestotnik    | Instructional Associate |
+| Denton Josey   | Outcomes Coach          |
 | Danielle Zarachowicz | Student Success Specialist |
 
 <br>
@@ -62,6 +39,12 @@ You will be required to meet 80% completion of homework assignments at the end o
 <br>
 
 ## Communication
+
+- **`seirflex-222-classroom`**
+- **`seirflex-222-outcomes`**
+- **`seirflex-222-partytime`**
+- **`seirflex-222-resources`**
+- **`seirflex-222-help`**
 
 <br>
 <br>
@@ -83,6 +66,23 @@ You will be required to meet 80% completion of homework assignments at the end o
 <br>
 <br>
 
+## Class Flow
+
+- Before class:
+  - Find the classroom zoom link pinned to the top of the main class slack channel
+  - Let IA's know if you are running late!
+- In class:
+  - Be attentive and participate whenever possible
+  - Work through lesson modules
+  - Preview upcoming lessons/projects/homework
+  - Fill out exit ticket
+- After class (optional):
+  - Complete assigned deliverables
+  - Ask additional questions on Slack
+
+<br>
+<br>
+
 ## Course Overview
 
 Learn to code in JavaScript, the native language of the web used by developers the world over.
@@ -90,6 +90,14 @@ Learn to code in JavaScript, the native language of the web used by developers t
 Build a single-page web app that persists user data and connects to services like Twitter and Facebook via APIs.
 
 Learn the fundamentals of object-oriented programming while receiving support from industry experts and a community of peers.
+
+<br>
+<br>
+<br>
+
+## Graduation Requirements
+
+You will be required to meet 80% completion of homework assignments at the end of each unit, and complete all project requirements. As this is an intense, fast-paced course, only 3 absences will be allowed.
 
 <br>
 <br>

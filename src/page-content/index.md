@@ -17,6 +17,12 @@ Curriculum schedule and content is subject to change at the instructor's discret
 
 <br>
 <br>
+
+### [Class Recordings](https://docs.google.com/spreadsheets/d/1imTR2N232tKbfGeQvPmtRcP_wK2OJqNO6aa4MRUdEO0/edit?usp=sharing)
+
+Here you will find all of our recorded class sessions, added weekly the day after the class.
+
+<br>
 <br>
 
 ### [Unit One: Frontend Fundamentals](/frontend-fundamentals)
