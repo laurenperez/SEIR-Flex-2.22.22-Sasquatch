@@ -26,12 +26,13 @@ title: "Course Details"
 
 | Name           | Role                    |
 | -------------- | ----------------------- |
-| Lauren Perez   | Lead Instructor         |
-| Alex Merced    | Lead Instructor         |
-| Yanny Castrillon | Instructional Associate |
-| Katie Pestotnik    | Instructional Associate |
-| Denton Josey   | Outcomes Coach          |
-| Danielle Zarachowicz | Student Success Specialist |
+| Lauren Perez (she/her)  | Lead Instructor         |
+| Alex Merced (he/him)   | Lead Instructor         |
+| Yanny Castrillon  | Instructional Associate |
+| Katie Pestotnik (she/her)   | Instructional Associate |
+| Denton Josey    | Outcomes Coach          |
+| Danielle Zarachowicz (she/her)| Student Success Specialist |
+| Em Gordon (she/her)| Student Success Specialist |
 
 <br>
 <br>
@@ -76,7 +77,7 @@ Class slack channels:
   - Work through lesson modules
   - Preview upcoming lessons/projects/homework
   - Fill out exit ticket
-- After class (optional):
+- After class:
   - Complete assigned deliverables
   - Ask additional questions on Slack
 
