@@ -16,7 +16,7 @@ For the first phase of "install-fest", we'll install or verify the installation 
 - Xcode
 - VS Code
 - Git / Github / Github Enterprise
-- Global Gitignore
+- Global Gitignore - **(optional)**
 - Spectacle - **(optional)**
 - Imgur - **(optional)**
 

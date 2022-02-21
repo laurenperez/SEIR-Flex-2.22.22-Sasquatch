@@ -180,7 +180,7 @@ That said, here are some screenshots to show how your instructor has set up thei
 
 - `ls` does not display hidden files by default, adding the `-a` option will show them
 
-- `tree` is a nice utility for displaying a graphical representation of a directory and its nested directories.<br/>Install it by typing `brew install tree`
+- (Optional) `tree` is a nice utility for displaying a graphical representation of a directory and its nested directories.<br/>Install it by typing `brew install tree`
 
 <br>
 <br>
@@ -350,7 +350,7 @@ That said, here are some screenshots to show how your instructor has set up thei
 
 - Pressing the up and down arrows in Terminal will cycle through previously entered commands. This can be a huge time saver!
 
-- If you'd like to clear the Terminal window, simply press `cmd+k`
+- If you'd like to clear the Terminal window, simply press `cmd+k` or type `clear`
 
 <br>
 <br>

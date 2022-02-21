@@ -24,7 +24,7 @@ type: "lecture"
 ## Instructors
 
 - Lauren Perez - Instructor Lead (IL)
-- TBD - Instructor Lead (IL)
+- Alex Merced - Instructor Lead (IL)
 - Yanny Castrillon  - Instructional Associate (IA)
 - Katie Pestotnik - Instructional Associate (IA)
 
