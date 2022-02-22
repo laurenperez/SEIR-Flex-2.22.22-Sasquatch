@@ -2,12 +2,12 @@
 title: "Home"
 ---
 
-# Welcome to SEIR Flex "Sasquatch" 2/22/2022 - 8/17/2022
+# Welcome to SEIR - "Sasquatch"  2/22/2022 - 8/17/2022
 
 This website contains assignments and materials for General Assembly's Software Engineering Immersive Flex Program.
 
-<br>
-<br>
+![Sasquatch](https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80)
+
 <br>
 
 ## Curriculum Overview
@@ -19,7 +19,18 @@ Curriculum schedule and content is subject to change at the instructor's discret
 
 ### [Class Recordings](https://docs.google.com/spreadsheets/d/1imTR2N232tKbfGeQvPmtRcP_wK2OJqNO6aa4MRUdEO0/edit?usp=sharing)
 
-Here you will find all of our recorded class sessions, added weekly the day after the class.
+<br>
+<br>
+
+### [Orientation Repo](https://git.generalassemb.ly/AlexMerced/orientation)
+
+Here you'll find
+
+  - Video on your day to day tools (Git, VSCode, Bash)
+  - Bonus Lessons on Different Languages, Frameworks and more
+  - Cheatsheets for quick reference on course content
+  - Student Handbook
+  - Much more!
 
 <br>
 <br>
