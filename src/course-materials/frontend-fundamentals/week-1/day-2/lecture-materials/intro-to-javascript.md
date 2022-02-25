@@ -449,7 +449,7 @@ There are a couple of handy methods used to convert strings to numbers: `parseIn
 ```javascript
 let s = "1234.567"
 let n1 = parseInt(s) // 1234
-let n2 = parseFloat(s) // 1234.456
+let n2 = parseFloat(s) // 1234.567
 ```
 
 Remember however, that the data type for both flavors, integer and float (short for floating-point), is _number_.
