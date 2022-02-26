@@ -84,13 +84,13 @@ For this lesson, we're going to code along using an `HTML, CSS & JS`[repl.it](ht
 
 - To test what is truthy and what is falsey, let's type the following code into `script.js` inside our `repl.it`:
 
-  ```javascript
-  if (true) {
-    console.log("truthy!")
-  } else {
-    console.log("falsey!")
-  }
-  ```
+```javascript
+if (true) {
+  console.log("truthy!")
+} else {
+  console.log("falsey!")
+}
+```
 
 - We can "run" this code using repl.it's built in JavaScript Engine by pressing the `[ run ]` button
 
@@ -128,18 +128,18 @@ For this lesson, we're going to code along using an `HTML, CSS & JS`[repl.it](ht
 
 - For example, test the following expressions:
 
-  ```javascript
-  !false === true // true
-  !null === true // true
-  !3 === false // true
-  !"" === true // true
-  ```
+```javascript
+!false === true // true
+!null === true // true
+!3 === false // true
+!"" === true // true
+```
 
 - A double `!` operator is a great way to force an expression into its actual boolean value of `true` or `false`:
 
-  ```javascript
-  console.log(!!3) // outputs true
-  ```
+```javascript
+console.log(!!3) // outputs true
+```
 
 <br>
 <br>
@@ -153,17 +153,17 @@ For this lesson, we're going to code along using an `HTML, CSS & JS`[repl.it](ht
 
 - The logical `||` (OR) operator always returns the first operand if it is truthy, otherwise the second operand is returned:
 
-  ```javascript
-  "hello" || "goodbye" // evaluates to 'hello'
-  0 || null // evaluates to null
-  ```
+```javascript
+"hello" || "goodbye" // evaluates to 'hello'
+0 || null // evaluates to null
+```
 
 * The logical `&&` (AND) operator always returns the first operand if it is falsey, otherwise the second operand is returned:
 
-  ```javascript
-  "hello" && "goodbye" // evaluates to 'goodbye'
-  0 && null // evaluates to 0
-  ```
+```javascript
+"hello" && "goodbye" // evaluates to 'goodbye'
+0 && null // evaluates to 0
+```
 
 <br>
 <br>
@@ -173,16 +173,16 @@ For this lesson, we're going to code along using an `HTML, CSS & JS`[repl.it](ht
 
 - The `if`, `for` and `while` statements all require a _conditional expression_. For example:
 
-  ```javascript
-  let x = 1
-  while (x <= 10) {
-    var msg = "Item " + x
-    console.log(msg)
-    x++
-  }
-  ```
+```javascript
+let x = 1
+while (x <= 10) {
+  var msg = "Item " + x
+  console.log(msg)
+  x++
+}
+```
 
-      	Where, `x <= 10` is the conditional expression.
+Where, `x <= 10` is the conditional expression.
 
 - **❓ If `x <= 10` was replaced with just `x`, would it still be considered a valid conditional expression?**
 
@@ -216,21 +216,21 @@ For this lesson, we're going to code along using an `HTML, CSS & JS`[repl.it](ht
 
 - Single path `if`:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-  ```javascript
-  if (val === 1) {
-    console.log("This code will run only if val equals 1")
-  }
-  ```
+```javascript
+if (val === 1) {
+  console.log("This code will run only if val equals 1")
+}
+```
 
 - Conditional expression must be surrounded by parens
 
 - If you have only a single statement that needs to execute, you can write that statement without using curly braces (used to define a block statement):
 
-  ```javascript
-  if (val === 1) console.log("This code will run only if val equals 1")
-  ```
+```javascript
+if (val === 1) console.log("This code will run only if val equals 1")
+```
 
-      	This code is the same as the example above.
+This code is the same as the example above.
 
 <br>
 <br>
@@ -240,13 +240,13 @@ For this lesson, we're going to code along using an `HTML, CSS & JS`[repl.it](ht
 
 - Dual paths `if` with `else`:
 
-  ```javascript
-  if (val === 1) {
-    console.log("val is one")
-  } else {
-    console.log("val is not one")
-  }
-  ```
+```javascript
+if (val === 1) {
+  console.log("val is one")
+} else {
+  console.log("val is not one")
+}
+```
 
 <br>
 <br>
@@ -256,17 +256,17 @@ For this lesson, we're going to code along using an `HTML, CSS & JS`[repl.it](ht
 
 - If you have three or more code paths use `if` with as many `else if` statements as necessary and optionally a final `else`:
 
-  ```javascript
-  if (val === 1) {
-    console.log("val is one")
-  } else if (val === 2) {
-    console.log("val is two")
-  } else if (val === 3) {
-    console.log("val is three")
-  } else {
-    console.log("not one, two, or three")
-  }
-  ```
+```javascript
+if (val === 1) {
+  console.log("val is one")
+} else if (val === 2) {
+  console.log("val is two")
+} else if (val === 3) {
+  console.log("val is three")
+} else {
+  console.log("not one, two, or three")
+}
+```
 
 - As always, the final `else` is optional
 
@@ -294,11 +294,11 @@ For this lesson, we're going to code along using an `HTML, CSS & JS`[repl.it](ht
 
 - We'll take a look at these statements:
 
-      	- **`while`**
+  - **`while`**
 
-      	- **`do while`**
+  - **`do while`**
 
-      	- **`for`**
+  - **`for`**
 
 <br>
 <br>
@@ -308,15 +308,15 @@ For this lesson, we're going to code along using an `HTML, CSS & JS`[repl.it](ht
 
 - The first looping statement we'll look at is `while`:
 
-  ```javascript
-  let word = ""
-  let words = []
-  while (word !== "end") {
-    word = prompt('Enter a word ("end" to quit)')
-    if (word !== "end") words.push(word)
-    alert("You've entered: " + words.join(", "))
-  }
-  ```
+```javascript
+let word = ""
+let words = []
+while (word !== "end") {
+  word = prompt('Enter a word ("end" to quit)')
+  if (word !== "end") words.push(word)
+  alert("You've entered: " + words.join(", "))
+}
+```
 
 - Use `while` when you want to continue to execute a block of code _while_ a condition is true
 
@@ -330,13 +330,13 @@ For this lesson, we're going to code along using an `HTML, CSS & JS`[repl.it](ht
 
 - You may choose to use the `do...while` statement instead of `while` to force the code block to always execute at least once
 
-  ```javascript
-  let num = 0
-  do {
-    console.log(num)
-    num += 2
-  } while (num <= 10)
-  ```
+```javascript
+let num = 0
+do {
+  console.log(num)
+  num += 2
+} while (num <= 10)
+```
 
 - **Do you see why the code block will always run at least once?**
 
@@ -350,12 +350,12 @@ For this lesson, we're going to code along using an `HTML, CSS & JS`[repl.it](ht
 
 - The next looping statement we'll look at is the `for` statement:
 
-  ```javascript
-  let colors = ["red", "white", "blue"]
-  for (let idx = 0; idx < colors.length; idx++) {
-    console.log(colors[idx])
-  }
-  ```
+```javascript
+let colors = ["red", "white", "blue"]
+for (let idx = 0; idx < colors.length; idx++) {
+  console.log(colors[idx])
+}
+```
 
 - Notice the `for` loop has three parts after the _for_ keyword: 1. The _initializer_ which runs only once before looping begins. It is used to declare and initialize a looping variable. 2. The _condition_ which will be evaluated before each loop. If truthy, the code block will execute. 3. The last part will execute after each loop and is typically used to increment or decrement the looping variable by one or more units.
 
@@ -367,16 +367,16 @@ For this lesson, we're going to code along using an `HTML, CSS & JS`[repl.it](ht
 
 - Use the `break` statement within any `while` or `for` loop to immediately exit the loop:
 
-  ```javascript
-  let word = ""
-  let words = []
-  while (true) {
-    word = prompt('Enter a word ("end" to quit)')
-    if (word === "end") break
-    words.push(word)
-    alert("You've entered: " + words.join(", "))
-  }
-  ```
+```javascript
+let word = ""
+let words = []
+while (true) {
+  word = prompt('Enter a word ("end" to quit)')
+  if (word === "end") break
+  words.push(word)
+  alert("You've entered: " + words.join(", "))
+}
+```
 
 Note how the `if` statement does not require braces in this case.
 
@@ -420,9 +420,9 @@ Note how the `if` statement does not require braces in this case.
 
 - The following JavaScript code will accept string input from the user and store the string in a variable named `choice`:
 
-  ```javascript
-  let choice = prompt("Enter a, b or c")
-  ```
+```javascript
+let choice = prompt("Enter a, b or c")
+```
 
 - Write an `if` statement that `console.logs` the following messages: - _a_ entered - "a is for apple" - _b_ entered - "b is for banana" - _c_ entered - "c is for cantaloupe" - anything else - "you're a rebel"
 
@@ -446,26 +446,26 @@ Note how the `if` statement does not require braces in this case.
 
 - The _ternary_ operator is ideal when you need to return one of two values depending upon a condition:
 
-  ```javascript
-  let message = score > 100 ? "You rock!" : "Keep trying!"
-  ```
+```javascript
+let message = score > 100 ? "You rock!" : "Keep trying!"
+```
 
-  The above one line of code replaces this code:
+The above one line of code replaces this code:
 
-  ```javascript
-  let message
-  if (score > 100) {
-    message = "You rock!"
-  } else {
-    message = "Keep trying!"
-  }
-  ```
+```javascript
+let message
+if (score > 100) {
+  message = "You rock!"
+} else {
+  message = "Keep trying!"
+}
+```
 
 - It can also be used to evaluate one of two expressions, so you can actually run a method if you'd like:
 
-  ```javascript
-  score > 100 ? gameWinner() : gameLoop()
-  ```
+```javascript
+score > 100 ? gameWinner() : gameLoop()
+```
 
 <br>
 

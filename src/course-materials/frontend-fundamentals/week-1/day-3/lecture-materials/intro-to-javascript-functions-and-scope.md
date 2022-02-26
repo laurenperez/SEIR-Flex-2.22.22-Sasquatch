@@ -331,7 +331,7 @@ There are a few tidbits about parameters/arguments to ponder:
 
 - First, let me answer a common question: _"What's the difference between a parameter and an argument?"_
 
-      	<img src="https://i.imgur.com/u5p9n7m.jpg">
+  <img src="https://i.imgur.com/u5p9n7m.jpg">
 
 - Parameters become local variables inside the function body.
 
@@ -574,7 +574,7 @@ If we define a variable (or a function) within the global scope, it becomes a pr
 One way we can prevent our code from leaking into the global scope is by wrapping it with a construct known as an **Immediately Invoked Function Expression**, or "IIFE" (pronounced "iffy"). It looks like this:
 
 ```javascript
-;(function() {
+(function() {
   "use strict"
 
   // your code here...

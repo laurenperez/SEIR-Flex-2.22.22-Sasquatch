@@ -64,13 +64,13 @@ For this lesson, we're going to code along using a `JavaScript` `REPL` from [rep
 
 - There are two ways to create an array...
 
-      	```javascript
-      	// using a Class/Constructor Function (less common syntax)
-      	let nums = new Array(2, 4, 18);
+```javascript
+// using a Class/Constructor Function (less common syntax)
+let nums = new Array(2, 4, 18);
 
-      	// using Array Literal syntax (recommended best practice)
-      	let nums = [2, 4, 18];
-      	```
+// using Array Literal syntax (recommended best practice)
+let nums = [2, 4, 18];
+```
 
 - The best practice is to use the _Array Literal_ syntax because it's more concise and the Class approach behaves differently if you pass only one argument
 
@@ -88,42 +88,42 @@ For this lesson, we're going to code along using a `JavaScript` `REPL` from [rep
 
 - We access elements in an array using **square bracket notation**, passing in the "index" (position) of the element you want to access:
 
-      	```javascript
-      	let movies = ['Caddyshack', 'Interstellar', 'Scarface'];
-      	let firstMovie = movies[0];  // 'Caddyshack'
-      	```
+```javascript
+let movies = ['Caddyshack', 'Interstellar', 'Scarface'];
+let firstMovie = movies[0];  // 'Caddyshack'
+```
 
 > Since when is `0` the first item in anything? Since computer science came along!<br> Internally, programs prefer to think in terms of "offsets" in memory. Thus, we access the first item using an offset of zero - arrays are "zero-based" in JS.
 
 - We can add elements to the **end** of an array using the `push` method:
 
-      	```javascript
-      	movies.push('Trading Places', 'Antitrust');
-      	```
-      	Note that more than one element can be added at a time.
+```javascript
+movies.push('Trading Places', 'Antitrust');
+```
+Note that more than one element can be added at a time.
 
 - We can also add to the **front** of an array with `unshift`:
 
-      ```javascript
-      movies.unshift('Star Wars');
-      ```
+```javascript
+movies.unshift('Star Wars');
+```
 
-  <br>
-  <br>
+<br>
+<br>
 
 ### Removing Elements from an Array
 
 - We can remove a single element from the **end** of an array using the `pop` method:
 
-      	```javascript
-      	let movie = movies.pop();
-      	```
+```javascript
+let movie = movies.pop();
+```
 
 - We can also remove from the **front** of an array with `shift`:
 
-      	```javascript
-      	movie = movies.shift();
-      	```
+```javascript
+movie = movies.shift();
+```
 
 - `pop` and `shift` only remove one element at a time and don't take any arguments
 
@@ -137,13 +137,13 @@ For this lesson, we're going to code along using a `JavaScript` `REPL` from [rep
 
 - Maybe this will help you remember:
 
-      	```shell
-      	The "longer" named methods do the same thing (add to an array)
-      	unshift -> [...] <- push
+```shell
+The "longer" named methods do the same thing (add to an array)
+unshift -> [...] <- push
 
-      	The "shorter" named ones remove
-      	shift <- [...] -> pop
-      	```
+The "shorter" named ones remove
+shift <- [...] -> pop
+```
 
 <br>
 <br>
@@ -177,31 +177,31 @@ The `splice` method always returns an array containing the removed elements.
 
 - Although a `for` loop can be used to iterate over an array, if you know you want to iterate over **all** of the elements in an array, the `forEach` method is a better approach:
 
-      	```javascript
-      	movies.forEach(function(movie) {
-      		console.log(movie);
-      	});
-      	```
+```javascript
+movies.forEach(function(movie) {
+	console.log(movie);
+});
+```
 
 * Try it out. As you can see, the `forEach` method calls the function provided as an argument **once for each element** in the array
 * You can also access the index of each iteration:
 
-      	```javascript
-      	movies.forEach(function(movie, idx) {
-      		console.log(idx + ') ' + movie);
-      	});
-      	```
+```javascript
+movies.forEach(function(movie, idx) {
+	console.log(idx + ' ' + movie);
+});
+```
 
 * Note that it's a good practice to name the parameter that accepts each element as the singular of the array, or simply the first letter of the array variable (`movie` or `m` for the example above)
 
 - ES2015 provides the `for...of` loop for iterating over the elements of arrays and other iterables such as strings:
 
-      	```javascript
-      	for(let movie of movies) {
-      		if (movie === 'The Last Airbender') break;
-      		console.log(movie);
-      	}
-      	```
+```javascript
+for (let movie of movies) {
+	if (movie === 'The Last Airbender') break;
+	console.log(movie);
+}
+```
 
 - Unlike `forEach`, the `for...of` loop can be exited using the `break` statement
 
@@ -223,10 +223,10 @@ The `splice` method always returns an array containing the removed elements.
 
 - Example:
 
-      	```javascript
-      	movies => [ 'Spaceballs', 'The Sting', 'Alien' ]
-      	let lastTwoMovies = movies.slice(1, 3); // ['The Sting, 'Alien']
-      	```
+```javascript
+movies => [ 'Spaceballs', 'The Sting', 'Alien' ]
+let lastTwoMovies = movies.slice(1, 3); // ['The Sting, 'Alien']
+```
 
 - Unlike `splice`, the 2nd argument in `slice` represents the ending index (but does not include that index)
 
@@ -240,11 +240,11 @@ The `splice` method always returns an array containing the removed elements.
 
 - Example:
 
-      	```javascript
-      	movies => [ 'Spaceballs', 'The Sting', 'Alien' ]
-      	let moviesCopy = [...movies];
-      	```
-      	The elements are being "spread" within the array literal
+```javascript
+movies => [ 'Spaceballs', 'The Sting', 'Alien' ]
+let moviesCopy = [...movies];
+```
+The elements are being "spread" within the array literal
 
 <br>
 <br>
@@ -253,10 +253,10 @@ The `splice` method always returns an array containing the removed elements.
 
 - Here's how you can copy and insert additional elements simultaneously using the spread operator:
 
-      	```javascript
-      	movies => [ 'Spaceballs', 'The Sting', 'Alien' ]
-      	let moreMovies = ['Interstellar', ...movies, 'Contact'];
-      	```
+```javascript
+movies => [ 'Spaceballs', 'The Sting', 'Alien' ]
+let moreMovies = ['Interstellar', ...movies, 'Contact'];
+```
 
 <br>
 <br>
@@ -265,17 +265,17 @@ The `splice` method always returns an array containing the removed elements.
 
 - An array method that comes in handy is `join` which creates a string from all of the elements in an array:
 
-      	```javascript
-      	let movieStr = movies.join();
-      	=> 'Spaceballs,The Sting,Alien'
-      	```
+```javascript
+let movieStr = movies.join();
+=> 'Spaceballs,The Sting,Alien'
+```
 
 - As you can see, by default, the movies were delimited by a comma. However, we can pass `join` whatever string we want to use as the delimiter:
 
-      	```javascript
-      	movieStr = movies.join('    ');
-      	=> 'Spaceballs    The Sting    Alien'
-      	```
+```javascript
+movieStr = movies.join('    ');
+=> 'Spaceballs    The Sting    Alien'
+```
 
 <br>
 <br>
