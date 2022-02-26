@@ -294,11 +294,11 @@ if (val === 1) {
 
 - We'll take a look at these statements:
 
-  - **`while`**
+  -**`while`**
 
-  - **`do while`**
+  -**`do while`**
 
-  - **`for`**
+  -**`for`**
 
 <br>
 <br>
