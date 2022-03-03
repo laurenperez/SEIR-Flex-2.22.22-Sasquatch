@@ -24,15 +24,15 @@ title: "Course Details"
 
 ## Instructors
 
-| Name           | Role                    |
-| -------------- | ----------------------- |
-| Lauren Perez (she/her)  | Lead Instructor         |
-| Alex Merced (he/him)   | Lead Instructor         |
-| Yanny Castrillon  | Instructional Associate |
-| Katie Pestotnik (she/her)   | Instructional Associate |
-| Denton Josey    | Outcomes Coach          |
-| Danielle Zarachowicz (she/her)| Student Success Specialist |
-| Em Gordon (she/her)| Student Success Specialist |
+| Name           | Role                    | Office Hours       |
+| -------------- | ----------------------- | -------------------|
+| Lauren Perez (she/her)  | Lead Instructor         | Mondays 6:30pm - 7:30pm PST & Teaching Saturdays 5:00pm - 6:00pm PST
+| Alex Merced (he/him)   | Lead Instructor         | Teaching Saturdays 5:00pm - 6:00pm PST
+| Yanny Castrillon  | Instructional Associate | Mondays 10:00am - 11:00am PST
+| Katie Pestotnik (she/her)   | Instructional Associate | Sundays 4:00pm - 6:00pm PST
+| Denton Josey    | Outcomes Coach          | Message as needed
+| Danielle Zarachowicz (she/her)| Student Success Specialist | Message as needed
+| Em Gordon (she/her)| Student Success Specialist | Message as needed
 
 <br>
 <br>
