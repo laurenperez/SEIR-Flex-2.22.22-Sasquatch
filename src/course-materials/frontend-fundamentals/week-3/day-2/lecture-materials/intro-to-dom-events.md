@@ -82,7 +82,7 @@ intro-to-dom-events/
 
 - The `defer` attribute ensures the DOM is ready before the script executes.
 
-- Putting a temporary `alert('js loaded)` will verify `script.js` is being loaded.
+- Putting a temporary `alert('js loaded')` will verify `script.js` is being loaded.
 
 <br>
 <br>

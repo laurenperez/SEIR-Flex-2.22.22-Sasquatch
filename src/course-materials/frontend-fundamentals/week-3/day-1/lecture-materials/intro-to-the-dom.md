@@ -199,7 +199,7 @@ intro-to-dom/
 
 - The solution is to use the `querySelector(selector)` method that is available on the `document` object (and elements themselves).
 
-- The _selector_ argument is a string that follows the rules of regular CSS3 selectors.
+- The _selector_ argument is a string that follows the rules of regular [CSS3 selectors](https://www.w3schools.com/cssref/css_selectors.asp).
 
 - The CSS3 selector language offers amazing power to target elements for selection!
 
