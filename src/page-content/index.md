@@ -49,17 +49,17 @@ Here you'll find
 <br>
 <br>
 
-<!-- ### [Unit Two: Backend Fundamentals](/backend-fundamentals) -->
+### [Unit Two: Backend Fundamentals](/backend-fundamentals)
 
-### 🔒 Unit Two: Backend Fundamentals - **Locked**
+<!-- ### 🔒 Unit Two: Backend Fundamentals - **Locked** -->
 
 | Week  | Topics                                                                      |
 | ----- | --------------------------------------------------------------------------- |
-| 6/7   | Intro to Full-Stack Development - Node, Express & MongoDB                   |
-| 8     | Intro to the Mongoose ODM & Data Entity Relationships - Introduce Project 2 |
-| 9     | Catch up to Labs, Project 2 Planning, and Authentication With Oauth         |
-| 10    | Project 2 Week, Cloud-Hosted MongoDB & Heroku Deployment                    |
-| 11/12 | Project 2 Week (Cont) and Project 2 Presentations                           |
+| 6/7   | Intro to Full-Stack Development - Node, Express, REST, EJS, cURL            |
+| 8     | Intro to Databases - MongoDB, Mongoose ODM, & Data Entity Relationships
+| 9     | Authentication With Oauth, Cloud-Hosted MongoDB & Heroku Deployment, Project 2 Week |
+| 10    | Finish Project 2 and Project Presentations                                  |
+
 
 <br>
 <br>

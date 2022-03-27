@@ -12,5 +12,6 @@ topics: "Authentication"
 #### Authentication
 
 - [**Lecture:** Intro to Authentication With Bcrypt & Sessions](/backend-fundamentals/week-9/day-1/lecture-materials/authentication-with-bcrypt-and-sessions/)
+- [**Lecture:** Intro to Authentication With Oauth](/backend-fundamentals/week-9/day-1/lecture-materials/authentication-with-oauth/)
+- [**Activity:** Review Project 2](/unit-projects/unit-two-project-requirements)
 - **Activity:** Project 2 Planning
-- [**Advanced Material Resource:** Intro to Authentication With Oauth](/backend-fundamentals/week-9/day-1/lecture-materials/authentication-with-oauth/)

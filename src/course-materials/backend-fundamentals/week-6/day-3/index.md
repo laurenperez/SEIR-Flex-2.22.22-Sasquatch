@@ -17,3 +17,6 @@ topics: "Intro to Full-Stack Development, Express & Node"
 - [**Lecture**: URL and Query Params](/backend-fundamentals/week-6/day-3/lecture-materials/url-and-query-params)
 - [**Lab**: Express Lab 2](/backend-fundamentals/week-6/day-3/labs/express-lab-2/) - **Deliverable**
 - [**Lab**: Express Calculator](/backend-fundamentals/week-6/day-3/labs/express-calculator/) - **Non-Deliverable**
+
+
+- [**Optional Lab**: First Contact](/backend-fundamentals/week-6/day-3/labs/super-bonus-first-contact/) - ** **Bonus** **

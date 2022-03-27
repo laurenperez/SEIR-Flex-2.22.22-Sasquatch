@@ -13,7 +13,7 @@ topics: "Project 2 Week"
 #### Project 2 Week
 
 - **Activity:** Students Work on Project 2
-
+- [**Guided Lab:** Heroku Deployment](/backend-fundamentals/week-10/day-1/labs/heroku-deployment)
 
 
 

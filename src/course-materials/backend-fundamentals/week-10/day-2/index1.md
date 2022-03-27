@@ -11,4 +11,4 @@ topics: "Project 2 Week"
 
 #### Project 2 Week
 
-- **Activity:** Students Work on Project 2
+- **Activity:** Students Present Project 2  🎉

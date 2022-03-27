@@ -67,14 +67,14 @@ Index, New and Create has been completed for you.
 #### Restful Routes
 
 |  #  | Action  |    URL    | HTTP Verb | EJS view filename |   mongoose method    |
-| :-: | :-----: | :-------: | :-------: | :---------------: | :------------------: | --- |
+| :-: | :-----: | :-------: | :-------: | :---------------: | :------------------: |
 |  1  |  Index  |  /logs/   |    GET    |     index.ejs     |      Log.find()      |
 |  2  |  Show   |           |           |                   |                      |
 |  3  |   New   | /logs/new |    GET    |      new.ejs      |         none         |
 |  4  | Create  |  /logs/   |   POS T   |       none        | Log.create(req.body) |
 |  5  |  Edit   |           |           |                   |                      |
 |  6  | Update  |           |           |                   |                      |
-|  7  | Destroy |           |           |                   |                      |     |
+|  7  | Destroy |           |           |                   |                      |
 
 1. In your `student_labs` folder
 1. `mkdir captains_log`

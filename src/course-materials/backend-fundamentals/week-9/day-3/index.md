@@ -4,9 +4,11 @@ title: "Week 9 - Day 3"
 week: 9
 day: 3
 type: "homepage"
-topics: "No Class Today For the Thanksgiving Holiday"
+topics: "Project 2 Week"
 ---
 
 # Week 9 - Day 3
 
-#### No Class Today For the Thanksgiving Holiday
+#### Project 2 Week
+
+- **Activity:** Students Work on Project 2
