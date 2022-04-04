@@ -118,15 +118,14 @@ const villians = [
 
 Let's do another rep with setting up an express server!
 
-1. `cd` back into the labs directory
-1. create a directory called friends
-1. cd into friends
-1. Create a basic express app
-1. Create a variable inside `server.js` that is an array of your friends
-1. Create `index` and `show` routes
-1. Enhance the data so that each friend is an object with age, location, eyeColor, hairColor attributes
-1. The `index` should be a name that links to the show page
-1. the `show` route should show all the details of your friend
+  1. Create a directory called friends
+  2. cd into friends
+  3. Create a basic express app
+  4. Create a variable inside `server.js` that is an array of your friends
+  5. Create `index` and `show` routes
+  6. Enhance the data so that each friend is an object with age, location, eyeColor, hairColor attributes
+  7. The `index` should be a name that links to the show page
+  8. The `show` route should show all the details of your friend
 
 <br>
 <br>
