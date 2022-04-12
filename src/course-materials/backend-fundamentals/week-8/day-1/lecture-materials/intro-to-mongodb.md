@@ -227,33 +227,31 @@ We can also type our code in vscode and when we know it's right, copy and paste 
 Let's go ahead and copy paste these into our atlas interface to populate our collection with more documents
 
 ```js
-;[
   {
-    name: "Jennifer",
-    phone: 8675309,
-    state: "California",
+    "name": "Jennifer",
+    "phone": "8675309",
+    "state": "California",
   },
   {
-    name: "Claire",
-    phone: 6060842,
+    "name": "Claire",
+    "phone": "6060842",
   },
   {
-    name: "Morris",
-    phone: 7779311,
-    state: "Minnesota",
+    "name": "Morris",
+    "phone": "7779311",
+    "state": "Minnesota",
   },
   {
-    firstName: "Alicia",
-    lastName: "Keys",
-    phone: 4894608,
-    state: "New York",
+    "firstName": "Alicia",
+    "lastName": "Keys",
+    "phone": "4894608",
+    "state": "New York",
   },
   {
-    name: "Etta",
-    phone: "842-3089",
-    state: "California",
-  },
-]
+    "name": "Etta",
+    "phone": "842-3089",
+    "state": "California",
+  }
 ```
 
 <br>
