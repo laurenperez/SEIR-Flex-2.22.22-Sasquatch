@@ -27,7 +27,7 @@ title: "Course Details"
 | Name           | Role                    | Office Hours       |
 | -------------- | ----------------------- | -------------------|
 | Lauren Perez (she/her)  | Lead Instructor         | Mondays 6:30pm - 7:30pm PST & Teaching Saturdays 5:00pm - 6:00pm PST
-| Shaw Kitajima (he/him)  | Lead Instructor         | Thursdays 8:30pm - 9:30pm PST & Teaching Saturdays 5:00pm - 6:00pm PST
+| Shaw Kitajima (he/him)  | Lead Instructor         | Thursdays 6:30pm - 7:30pm / 8:30pm - 9:30pm (if Outcomes) & Teaching Saturdays 5:00pm - 6:00pm PST
 | Alex Merced (he/him)   | Lead Instructor         | Teaching Saturdays 5:00pm - 6:00pm PST
 | Yanny Castrillon (he/him)  | Instructional Associate | Mondays 10:00am - 11:00am PST
 | Katie Pestotnik (she/her)   | Instructional Associate | Sundays 4:00pm - 6:00pm PST
