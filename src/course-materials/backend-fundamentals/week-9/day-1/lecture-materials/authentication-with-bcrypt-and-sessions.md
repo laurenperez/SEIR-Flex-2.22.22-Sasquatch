@@ -14,14 +14,14 @@ type: "lecture"
 
 ## Lesson Objectives
 
-1. Explain what is `Bcrypt`
 1. Explain why we need environmental variables
-1. Explain what a session is
-1. Use express-session package as middleware
-1. Save user information on the session object
-1. Retrieve user information saved on the session object
-1. Update user information saved on the session object
-1. Destroy the session
+2. Explain what a session is
+3. Use express-session package as middleware
+4. Save user information on the session object
+5. Retrieve user information saved on the session object
+6. Update user information saved on the session object
+7. Destroy the session
+8. Explain what is `Bcrypt`
 
 <br>
 <br>
@@ -60,7 +60,7 @@ Before we dive into adding express sessions to an app, let's just get some pract
 - `mkdir auth-sessions-demo`
 - `touch server.js`
 - `npm init -y`
-- `npm install express express-session bcrypt dotenv`
+- `npm install express express-session dotenv`
 - `touch .env`
 
 <br>
@@ -128,7 +128,7 @@ app.use(
 
 More info on the default resave value: [https://www.npmjs.com/package/express-session#resave](https://www.npmjs.com/package/express-session#resave)
 
-More info on the default saveUninitialized value: [https://www.npmjs.com/package/express-session#resave](https://www.npmjs.com/package/express-session#resave)
+More info on the default saveUninitialized value: [https://www.npmjs.com/package/express-session#saveuninitialized](https://www.npmjs.com/package/express-session#saveuninitialized)
 
 <br>
 <br>
@@ -159,8 +159,8 @@ Once you add a property onto the session object, you can retrieve it when a user
 ```js
 // Routes / Controllers
 app.get("/retrieve", (req, res) => {
+  //test to see if that value exists
   if (req.session.anyProperty === "something you want it to") {
-    //test to see if that value exists
     //do something if it's a match
     res.send("it matches! cool")
   } else {
@@ -230,17 +230,17 @@ In `server.js`:
 
 ```js
 // Routes / Controllers
-app.get('/destroy', (req, res) => {
-    req.session.destroy((error) => {
-        if (error) {
-            res.send(error);
-        } else {
-            res.send({
-                success: true;
-            });
-        }
-    });
-});
+app.get("/destroy", (req, res) => {
+  req.session.destroy((error) => {
+    if (error) {
+      res.send(error)
+    } else {
+      res.send({
+        success: true,
+      })
+    }
+  })
+})
 ```
 
 <br>
@@ -278,6 +278,8 @@ bcrypt is a package that will encrypt passwords so that if your database gets ha
 <br>
 <br>
 <br>
+
+- `npm install bcrypt`
 
 ## Include bcrypt package
 
