@@ -19,6 +19,6 @@ topics: "Authentication"
 #### Extra Resources and Bonus Lab
 
 - [**Lecture:** Intro to Authentication With Oauth](/backend-fundamentals/week-9/day-1/lecture-materials/authentication-with-oauth/)
-- [**Tutorial:** Mean Auth Template 1 ](/backend-fundamentals/week-9/day-1/lecture-materials/meen-auth-template-part-1/)
-- [**Tutorial:** Mean Auth Template 2 ](/backend-fundamentals/week-9/day-1/lecture-materials/meen-auth-template-part-2/)
+- [**Tutorial:** Meen Auth Template 1 ](/backend-fundamentals/week-9/day-1/lecture-materials/meen-auth-template-part-1/)
+- [**Tutorial:** Meen Auth Template 2 ](/backend-fundamentals/week-9/day-1/lecture-materials/meen-auth-template-part-2/)
 - [**Lab:** Building an API with Express](/backend-fundamentals/week-9/day-1/lecture-materials/producing-an-api-with-express/)
