@@ -12,6 +12,13 @@ topics: "Authentication"
 #### Authentication
 
 - [**Lecture:** Intro to Authentication With Bcrypt & Sessions](/backend-fundamentals/week-9/day-1/lecture-materials/authentication-with-bcrypt-and-sessions/)
-- [**Lecture:** Intro to Authentication With Oauth](/backend-fundamentals/week-9/day-1/lecture-materials/authentication-with-oauth/)
 - [**Activity:** Review Project 2](/unit-projects/unit-two-project-requirements)
-- **Activity:** Project 2 Planning
+- **Activity:** Post Project 2 Squads!
+- **Lab:** Project 2 Planning
+
+#### Extra Resources and Bonus Lab
+
+- [**Lecture:** Intro to Authentication With Oauth](/backend-fundamentals/week-9/day-1/lecture-materials/authentication-with-oauth/)
+- [**Tutorial:** Mean Auth Template 1 ](/backend-fundamentals/week-9/day-1/lecture-materials/meen-auth-template-part-1/)
+- [**Tutorial:** Mean Auth Template 2 ](/backend-fundamentals/week-9/day-1/lecture-materials/meen-auth-template-part-2/)
+- [**Lab:** Building an API with Express](/backend-fundamentals/week-9/day-1/lecture-materials/producing-an-api-with-express/)
