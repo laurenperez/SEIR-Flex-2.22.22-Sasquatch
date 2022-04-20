@@ -12,3 +12,7 @@ topics: "Project 2 Week"
 #### Project 2 Week
 
 - **Activity:** Students Work on Project 2
+- **Due:** Project Proposals EOD
+
+
+- [**Bonus Sessison - ASYNC/AWAIT**](https://git.generalassemb.ly/shawkitajima/Async-Await-Dogs)
