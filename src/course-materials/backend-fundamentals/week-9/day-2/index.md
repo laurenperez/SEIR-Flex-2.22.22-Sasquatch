@@ -15,4 +15,4 @@ topics: "Project 2 Week"
 - **Due:** Project Proposals EOD
 
 
-- [**Bonus Sessison - ASYNC/AWAIT**](https://git.generalassemb.ly/shawkitajima/Async-Await-Dogs)
+- [**Bonus Session - ASYNC/AWAIT**](https://git.generalassemb.ly/shawkitajima/Async-Await-Dogs)
