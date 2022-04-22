@@ -11,7 +11,6 @@ This website contains assignments and materials for General Assembly's Software 
 <br>
 
 ## Curriculum Overview
-
 Curriculum schedule and content is subject to change at the instructor's discretion.
 
 <br>
@@ -34,6 +33,14 @@ Here you'll find
 
 <br>
 <br>
+
+### Unit Project Requirements:
+| Unit | Rubric                                                                      |
+| ---- | --------------------------------------------------------------------------- |
+| 1    | Project 1 - [Frontend Fundamentals: Your First Web Application](/unit-projects/unit-one-project-requirements/)           |
+| 2    | Project 2 - [Backend Fundamentals: Your First Full Stack Application](/unit-projects/unit-two-project-requirements)     |
+| 3    | Project 3 - [React: A MERN Stack Application]()                             |
+| 4    | Project 4 - [Python: Build a Full-stack Django App as a Team]()             |
 
 ### [Unit One: Frontend Fundamentals](/frontend-fundamentals)
 
