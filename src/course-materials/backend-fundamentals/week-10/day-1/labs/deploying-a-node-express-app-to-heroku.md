@@ -139,11 +139,11 @@ $ git remote -v
 
 You should see a remote name `heroku` listed, if it wasn't, try `heroku create` again with another name.
 
-### Ensure the Code is Committed to `master`
+### Ensure the Code is Committed to `main`
 
-Deploying to Heroku is as easy as pushing the `master` branch to the remote named `heroku`.
+Deploying to Heroku is as easy as pushing the `main` branch to the remote named `heroku`.
 
-First, make sure your code is committed (on the `master` branch):
+First, make sure your code is committed (on the `main` branch):
 
 ```shell
 $ git add -A
@@ -156,7 +156,7 @@ $ git commit -m "Deploy to Heroku"
 Then push the repo to Heroku:
 
 ```shell
-$ git push heroku master
+$ git push heroku main
 ```
 
 The above command will kick off the deployment on Heroku which may take a minute or two to complete.

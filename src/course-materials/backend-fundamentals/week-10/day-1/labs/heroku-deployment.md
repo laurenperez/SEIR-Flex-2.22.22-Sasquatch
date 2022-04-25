@@ -245,7 +245,7 @@ app.listen(PORT, () => console.log("express is listening on:", PORT))
 
 - `git add .`
 - `git commit -m 'first commit'`
-- `git push origin master`
+- `git push origin main`
 
 Check this step carefully! Make sure `node_modules` are **NOT** on github!! If they made it to github, that means they are not being ignored by `.gitignore`. If you don't properly ignore them now you'll have massive headaches with heroku later!
 
@@ -323,9 +323,9 @@ in there add:
 - First update your remote repo so you're code is up to date.
   - `git add -A`
   - `git commit -m "updating code for heroku"`
-  - `git push origin master`
+  - `git push origin main`
 - Now also push to heroku
-  - `git push heroku master`
+  - `git push heroku main`
 
 Wait 1 minute then type `heroku open`. You should have your deployed app open up in your browser.
 
