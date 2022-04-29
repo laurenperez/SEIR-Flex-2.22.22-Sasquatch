@@ -71,9 +71,9 @@ Here you'll find
 <br>
 <br>
 
-### [Unit Three: React Fundamentals](/react-fundamentals)
+<!-- ### [Unit Three: React Fundamentals](/react-fundamentals) -->
 
-<!-- ### 🔒 Unit Three: React Fundamentals - **Locked** -->
+### 🔒 Unit Three: React Fundamentals - **Locked**
 
 | Week  | Topics                                                                 |
 | ----  | ---------------------------------------------------------------------- |
