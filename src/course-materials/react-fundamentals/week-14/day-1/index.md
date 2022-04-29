@@ -4,14 +4,12 @@ title: "Week 14 - Day 1"
 week: 14
 day: 1
 type: "homepage"
-topics: "MERN Stack build Part 3 & Review Project 3"
+topics: "MERN Stack Build Parts 1 & 2"
 ---
 
 # Week 14 - Day 1
 
-#### MERN Stack build Part 3 & Review Project 3
+#### MERN Stack Build Part 1 & 2
 
-- [**Activity:** MERN Stack Build Part 3 w/ Lab](/react-fundamentals/week-14/day-1/lecture-materials/mern-stack-build-part-3)
-- [**Activity:** Review Project 3 Requirements](/unit-projects/unit-three-project-requirements)
-
-- **Activity:** Catch up on Labs - **Time Permitting**
+- [**Activity:** MERN Stack Build Part 1 w/ Lab](/react-fundamentals/week-13/day-3/lecture-materials/mern-stack-build-part-1)
+- [**Activity:** MERN Stack Build Part 2 w/ Lab](/react-fundamentals/week-13/day-3/lecture-materials/mern-stack-build-part-2)

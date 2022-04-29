@@ -1,7 +1,7 @@
 ---
 track: "React Fundamentals"
 title: "Introduction to React"
-week: 11
+week: 10
 day: 3
 type: "lecture"
 ---

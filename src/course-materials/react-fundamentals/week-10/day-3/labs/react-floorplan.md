@@ -1,7 +1,7 @@
 ---
 track: "React Fundamentals"
 title: "React Floor Plan Bonus Lab"
-week: 11
+week: 10
 day: 3
 type: "lab"
 ---

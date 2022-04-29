@@ -1,7 +1,7 @@
 ---
 track: "React Fundamentals"
 title: "Intro to Props"
-week: 11
+week: 10
 day: 3
 type: "lecture"
 ---

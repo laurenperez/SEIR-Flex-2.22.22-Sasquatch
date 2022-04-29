@@ -4,13 +4,12 @@ title: "Week 13 - Day 2"
 week: 13
 day: 2
 type: "homepage"
-topics: "Intro to React Router"
+topics: "Full Stack React - React Dev Skills 2"
 ---
 
 # Week 13 - Day 2
 
-#### Intro to React Router
+#### Full Stack React - React Dev Skills 2
 
-- [**Activity:** Review Project 3 Requirements](/unit-projects/unit-three-project-requirements)
-- [**Lecture:** Intro to React Router w/ Bitcoin Router Build](/react-fundamentals/week-13/day-2/lecture-materials/bitcoin-router-build/)
-- [**Lab:** React Router Lab](/react-fundamentals/week-13/day-2/labs/react-router-lab) - **Deliverable**
+
+- [**Lecture:** Full Stack React - React Dev Skills Part 2](/react-fundamentals/week-13/day-2/lecture-materials/full-stack-react)

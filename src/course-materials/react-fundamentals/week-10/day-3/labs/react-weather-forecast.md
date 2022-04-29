@@ -1,7 +1,7 @@
 ---
 track: "React Fundamentals"
 title: "React Weather Forecast"
-week: 11
+week: 10
 day: 3
 type: "lab"
 ---
@@ -34,8 +34,8 @@ Perform the following to complete the lab:
 
 **Creating The Data**
 
-1. Create a new file called `weatherData.js` that contain an array of five objects with the following properties: `img`,`conditions`,`time`.
-1. Populate the objects based on the values from those same elements in the HTML
+1. Create a new file called `weatherData.js` that contains an array of five objects with the following properties: `img`,`conditions`,`time`.
+1. Populate the objects with the values from the placeholder elements in the HTML
 1. Import into `App.js`
 1. Console.log the file to confirm that it has been imported
 
@@ -64,7 +64,7 @@ Perform the following to complete the lab:
 <br>
 <br>
 
-<!--
+
 **Bonus**
 
 - Try creating the following additional Components:
@@ -77,4 +77,4 @@ Perform the following to complete the lab:
 If successful, your React Hierarchy will now look like the following:
 
 <img src="https://i.imgur.com/ffkXBPi.png" width=600/>
--->
+

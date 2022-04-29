@@ -4,13 +4,10 @@ title: "Week 14 - Day 2"
 week: 14
 day: 2
 type: "homepage"
-topics: "(Optional) Authentication with Google Firebase & Project Planning & Approvals"
+topics: "MERN Stack Build Part 3"
 ---
 
 # Week 14 - Day 2
+#### MERN Stack Build Part 3
 
-#### (Optional) Authentication with Google Firebase & Project Planning & Approvals
-
-- **Workshop:** React with Google Firebase
-- [**Activity: Practice Lab - React Movies**](/react-fundamentals/week-14/day-2/labs/take-home-react-coding-challenge)
-- **Activity:** Project 3 Requirements Planning & Approvals
+- [**Activity:** MERN Stack Build Part 3 w/ Lab](/react-fundamentals/week-14/day-1/lecture-materials/mern-stack-build-part-3)
