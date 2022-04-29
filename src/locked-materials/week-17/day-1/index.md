@@ -9,4 +9,6 @@ topics: "Project 3"
 
 
 # Week 17 - Day 1
+
 #### Project 3
+#### Students Work on Project 3

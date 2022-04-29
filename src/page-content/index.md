@@ -39,8 +39,13 @@ Here you'll find
 | ---- | --------------------------------------------------------------------------- |
 | 1    | Project 1 - [Frontend Fundamentals: Your First Web Application](/unit-projects/unit-one-project-requirements/)           |
 | 2    | Project 2 - [Backend Fundamentals: Your First Full Stack Application](/unit-projects/unit-two-project-requirements)     |
-| 3    | Project 3 - [React: A MERN Stack Application]()                             |
-| 4    | Project 4 - [Python: Build a Full-stack Django App as a Team]()             |
+| 3    | Project 3 - [React: A MERN Stack Application](/unit-projects/unit-three-project-requirements)   |
+| 4    | Project 4 - Python: Build a Full-stack Django App as a Team            |
+
+<br>
+<br>
+<br>
+<br>
 
 ### [Unit One: Frontend Fundamentals](/frontend-fundamentals)
 
@@ -71,17 +76,17 @@ Here you'll find
 <br>
 <br>
 
-<!-- ### [Unit Three: React Fundamentals](/react-fundamentals) -->
+### [Unit Three: React Fundamentals](/react-fundamentals)
 
-### 🔒 Unit Three: React Fundamentals - **Locked**
+<!-- ### 🔒 Unit Three: React Fundamentals - **Locked** -->
 
 | Week  | Topics                                                                 |
 | ----  | ---------------------------------------------------------------------- |
 | 10    | Intro to React, Props, JSX & Components                                |
-| 11    | State, Inputs, Dev Skills Part 1,Event Handling & AJAX in React        |
-| 12    | React & CSS, Full-Stack React, React Router                            |
-| 13    | JSON Api, Dev Skills Part 2, React Portfolio                           |
-| 14    | Full MERN Build Parts 1, 2 & 3                                         |
+| 11    | State, Inputs, Event Handling & AJAX in React                          |
+| 12    | React & CSS, React Router                                              |
+| 13    | JSON Api, Full-Stack React, React Portfolio                            |
+| 14    | Full MERN Build Parts 1, 2 & 3 and  *Memorial Day Holiday*             |
 | 15    | Project Management, BookMarked Group Project                           |
 | 16    | Project Week - Project 3                                               |
 | 17    | Project 3 - Presentations                                              |

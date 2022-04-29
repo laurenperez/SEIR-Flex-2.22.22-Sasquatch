@@ -12,4 +12,4 @@ topics: "React Forms"
 #### React Forms
 
 - [**Lecture:** Handling Input in React - React Dev Skills Part 1](/react-fundamentals/week-11/day-2/lecture-materials/handling-input-in-react)
-- [**Lab:** Korilla Recipts](/react-fundamentals/week-11/day-2/labs/korilla-receipts/)
+- [**Lab:** Korilla Recipts](/react-fundamentals/week-11/day-2/labs/korilla-receipts/) - **Non-Deliverable**

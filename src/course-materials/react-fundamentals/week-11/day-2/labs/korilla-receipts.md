@@ -235,4 +235,3 @@ Here are previous student examples:
 ## Resources
 
 - [Solution Repo & Video for Korilla Receipts Lab](https://git.generalassemb.ly/HomeworkReviews/kr-review)
-- [Solution Repo & Video for iStocks Lab](https://git.generalassemb.ly/HomeworkReviews/istocks)

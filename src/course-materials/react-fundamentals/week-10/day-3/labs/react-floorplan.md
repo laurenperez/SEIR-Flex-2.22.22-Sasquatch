@@ -6,7 +6,7 @@ day: 3
 type: "lab"
 ---
 
-# Floor Plan Bonus Lab
+# React Floor Plan
 
 <br>
 <br>

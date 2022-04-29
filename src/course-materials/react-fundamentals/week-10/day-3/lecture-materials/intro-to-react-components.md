@@ -6,29 +6,24 @@ day: 3
 type: "lecture"
 ---
 
-
 # Components in React
 
 <br>
 <br>
 <br>
 
-
-
 ### [Click Here](https://generalassembly.zoom.us/rec/share/l4aZfuIyOkmNQ0qaDnen9mty23v4RwBmvE9wYbYrZ8BtYywsrAfQnX_p0tgKH1iH.dT-IvOGE9G6fv0Xk?startTime=1620490804000) to access recording - Includes Both JSX & Components Lessons
 
-
 <br>
 <br>
 <br>
-
 
 ## Learning Objectives
 
-| Students Will Be Able To: |
-|---| 
-| Explain UI Design using components |
-| Define "built-in" React Components |
+| Students Will Be Able To:               |
+| --------------------------------------- |
+| Explain UI Design using components      |
+| Define "built-in" React Components      |
 | Define "user-defined" Custom Components |
 
 <br>
@@ -59,7 +54,6 @@ To develop a React application, we construct the UI with a hierarchy of componen
 <br>
 <br>
 <br>
-
 
 #### f(d) = V
 
@@ -102,7 +96,6 @@ React components are lower-cased, for example "&lt;div&gt;".
 <br>
 <br>
 
-
 #### User-defined Components
 
 Our user-defined "custom" components may consist of any combination of other user-defined components and/or React Elements.
@@ -116,6 +109,8 @@ React Elements like "&lt;div&gt;" - HTML is what the browser knows and loves.
 </strong></p>
 </details>
 
+<br>
+<br>
 
 ## References
 
