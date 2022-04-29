@@ -71,19 +71,20 @@ Here you'll find
 <br>
 <br>
 
-<!-- ### [Unit Three: React Fundamentals](/react-fundamentals) -->
+### [Unit Three: React Fundamentals](/react-fundamentals)
 
-### 🔒 Unit Three: React Fundamentals - **Locked**
+<!-- ### 🔒 Unit Three: React Fundamentals - **Locked** -->
 
-| Week | Topics                                                                 |
-| ---- | ---------------------------------------------------------------------- |
-| 12   | Intro to React, JSX & Components                                       |
-| 13   | State, Props, CSS, Event Handling & AJAX with React                    |
-| 14   | Handling Input, Full-Stack React, React w/Firebase Auth & React Router |
-| 15   | Project 3 Planning, React w/Firebase Workshop & Memorial Day Holiday   |
-| 16   | Project 3 Week & React w/Firebase Auth Workshops                       |
-| 17   | Project 3 Week & React Review Workshops                                |
-| 18   | Project 3 Presentations                                                |
+| Week  | Topics                                                                 |
+| ----  | ---------------------------------------------------------------------- |
+| 10    | Intro to React, Props, JSX & Components                                |
+| 11    | State, Inputs, Dev Skills Part 1,Event Handling & AJAX in React        |
+| 12    | React & CSS, Full-Stack React, React Router                            |
+| 13    | JSON Api, Dev Skills Part 2, React Portfolio                           |
+| 14    | Full MERN Build Parts 1, 2 & 3                                         |
+| 15    | Project Management, BookMarked Group Project                           |
+| 16    | Project Week - Project 3                                               |
+| 17    | Project 3 - Presentations                                              |
 
 <br>
 <br>
