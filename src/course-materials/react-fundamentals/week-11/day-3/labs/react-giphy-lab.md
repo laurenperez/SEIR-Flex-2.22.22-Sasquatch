@@ -1,6 +1,6 @@
 ---
 track: "React Fundamentals"
-title: "React Movie Search"
+title: "React Giphy Lab"
 week: 12
 day: 2
 type: "lab"
@@ -37,8 +37,3 @@ Here is a [working version of the Giphy App](https://h6kdy.csb.app/)
 - An application that renders a button on page load.
 - On Button click make an API call and retrieve/render a single random GIF
 
-<br>
-<br>
-<br>
-
-#### Done? You are awesome! Here is your 🍪
