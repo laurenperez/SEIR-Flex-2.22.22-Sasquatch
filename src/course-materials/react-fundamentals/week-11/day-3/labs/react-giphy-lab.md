@@ -8,9 +8,8 @@ type: "lab"
 
 ![giphy-fun](https://i.imgur.com/wAgoirm.png)
 
-Let's build a react giphy app!
+### Let's build a react giphy app!
 
-Here is a [working version of the Giphy App](https://h6kdy.csb.app/)
 
 <br>
 <br>
@@ -37,3 +36,6 @@ Here is a [working version of the Giphy App](https://h6kdy.csb.app/)
 - An application that renders a button on page load.
 - On Button click make an API call and retrieve/render a single random GIF
 
+<br>
+<br>
+<br>

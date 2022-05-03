@@ -11,7 +11,7 @@ topics: "Lifting State, useEffect & Ajax"
 #### Lifting State, UseEffect & Ajax
 
 - [**Lecture:** React Movie Search](/react-fundamentals/week-11/day-3/lecture-materials/react-movie-search)
-- [**Lab:** React Giphy Lab](/react-fundamentals/week-11/day-3/labs/react-giphy-lab/) **Deliverable**
+- [**Lab:** React Giphy Lab](/react-fundamentals/week-11/day-3/labs/react-giphy-lab/) - **Deliverable**
 
 <br >
 
