@@ -9,4 +9,6 @@ topics: "React and CSS"
 
 # Week 12 - Day 1
 
-React and CSS
+**Activity TBD**-React Review - lets go over what we have learned so far! 
+
+**Activity TBD**- React and CSS Codealong 
