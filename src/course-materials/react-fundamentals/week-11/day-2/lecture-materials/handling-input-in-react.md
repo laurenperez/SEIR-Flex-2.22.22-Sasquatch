@@ -32,7 +32,7 @@ type: "lecture"
 
 <!-- Let's create a new React Project on [`codesandbox.io`](https://www.codesandbox.io) -->
 
-Let's create a new project using `npx create-react-app my-dev-skills`
+Let's create a new project using `npx create-react-app@latest my-dev-skills`
 
 **Replace the existing `<App>` component with this starting code:**
 
@@ -86,7 +86,7 @@ export default function App() {
 
 <br>
 
-**Let's replace the contents of `styles.css` with:**
+**Let's replace the contents of `App.css` with:**
 
 ```css
 * {
