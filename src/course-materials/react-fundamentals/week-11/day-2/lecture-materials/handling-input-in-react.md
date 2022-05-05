@@ -41,7 +41,7 @@ Let's create a new project using `npx create-react-app@latest my-dev-skills`
 
 ```javascript
 import { useState } from "react"
-import "./styles.css"
+import "./App.css"
 
 export default function App() {
   const [state, setState] = useState({
