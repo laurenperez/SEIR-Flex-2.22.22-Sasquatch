@@ -30,9 +30,14 @@ type: "lecture"
 
 ## Set Up
 
-Let's create a new React Project on [`codesandbox.io`](https://www.codesandbox.io)
+<!-- Let's create a new React Project on [`codesandbox.io`](https://www.codesandbox.io) -->
+
+Let's create a new project using `npx create-react-app my-dev-skills`
 
 **Replace the existing `<App>` component with this starting code:**
+
+<br>
+<br>
 
 ```javascript
 import { useState } from "react"
@@ -168,7 +173,7 @@ button:hover {
 <br>
 <br>
 
-**The sandbox will look something like this once the above setup is complete:**
+**The app will look something like this once the above setup is complete:**
 
 <img src="https://i.imgur.com/ntFDX0q.png">
 
