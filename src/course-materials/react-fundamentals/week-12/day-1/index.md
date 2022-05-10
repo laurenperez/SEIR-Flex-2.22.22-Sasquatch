@@ -9,6 +9,6 @@ topics: "React and CSS"
 
 # Week 12 - Day 1
 
-**Activity TBD**-React Review - lets go over what we have learned so far! 
+- [**Lecture: React and CSS- How to style in React?**](/react-fundamentals/week-12/day-1/lecture-materials/react-css/)
 
-**Activity TBD**- React and CSS Codealong 
+**Activity: React Review** - Lets go over what we have learned so far!
