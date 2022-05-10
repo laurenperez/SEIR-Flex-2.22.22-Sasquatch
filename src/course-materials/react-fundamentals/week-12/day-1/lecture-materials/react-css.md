@@ -51,7 +51,7 @@ Like many things React, styling is done a little differently than what we've bec
 
 For example, when learning CSS we were told that inline styling should be avoided. Well, React actually encourages inline styling!
 
-Ther are several popular industry standards for styling react components, what you choose to use in your deliverables is up to you. There is no "best" and exposure to multiple styles and examples is ideal. In a real job setting, you will just adopt the conventions of the existing codebase.
+There are several popular methods for styling react components, what you choose to use in your deliverables is up to you. There is no true "industry standard" and exposure to multiple styles and examples is ideal. In a real job setting, you will just adopt whatever librarys or conventions are used in the existing codebase.
 <br>
 <br>
 
