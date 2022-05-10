@@ -11,4 +11,4 @@ topics: "React and CSS"
 
 - [**Lecture: React and CSS- How to style in React?**](/react-fundamentals/week-12/day-1/lecture-materials/react-css/)
 
-**Activity: React Review** - Lets go over what we have learned so far!
+- **Activity: React Review** - Lets go over what we have learned so far!

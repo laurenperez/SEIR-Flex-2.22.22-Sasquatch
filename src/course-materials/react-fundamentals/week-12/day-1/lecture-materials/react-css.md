@@ -185,7 +185,7 @@ You'll want to refer back to these:
 <br>
 <br>
 
-##### Example 1 : Normal Stylesheets ( This should be review )
+#### Example 1 : Normal CSS Stylesheets ( This should be review )
 
 <br>
 
@@ -196,12 +196,12 @@ You'll want to refer back to these:
 <br>
 <br>
 
-:sparkles: Let's give it a fancy color: #2465f1
+✨  Let's give it a fancy color: #2465f1
 
 <br>
 <br>
 
-###### Review Questions
+#### Review Questions
 
 **❓ What attribute do we use in JSX to apply css classes to components?**
 
@@ -213,7 +213,7 @@ You'll want to refer back to these:
 <br>
 
 
-##### Example 2 : Inline CSS
+#### Example 2 : Inline CSS
 
 <br>
 
@@ -230,12 +230,12 @@ Inline styling in React uses the `style` property, however, unlike the `style` a
 <br>
 <br>
 
-:sparkles: Let's give it a fancy color: #b974b6
+✨  Let's give it a fancy color: #b974b6
 
 <br>
 <br>
 
-###### Review Questions
+#### Review Questions
 
 **❓ What attribute do we use in JSX to apply css styles directly to components?**
 
@@ -246,7 +246,7 @@ Inline styling in React uses the `style` property, however, unlike the `style` a
 <br>
 <br>
 
-##### Example 3 : CSS in JS
+#### Example 3 : CSS in JS
 
 <br>
 
@@ -276,12 +276,12 @@ export default function Button({ text }) {
 <br>
 <br>
 
-:sparkles: Let's give it some fancy colors: #24292e & #f7df1c
+✨  Let's give it some fancy colors: #24292e & #f7df1c
 
 <br>
 <br>
 
-###### Review Questions
+#### Review Questions
 
 **❓ What method does react-jss use to apply style objects?**
 
@@ -292,7 +292,7 @@ export default function Button({ text }) {
 <br>
 <br>
 
-##### Example 4 : Styled Components
+#### Example 4 : Styled Components
 
 <br>
 
@@ -321,12 +321,12 @@ export default function Button({ text }) {
 <br>
 <br>
 
-:sparkles: Let's give it some fancy colors: #86ba8a & #3d3d3d
+✨  Let's give it some fancy colors: #86ba8a & #3d3d3d
 
 <br>
 <br>
 
-###### Review Questions
+#### Review Questions
 
 **❓ What syntax is used inside the tagged template literal?**
 
@@ -337,7 +337,7 @@ export default function Button({ text }) {
 <br>
 <br>
 
-##### Example 5 : CSS Modules
+#### Example 5 : CSS Modules
 
 <br>
 
@@ -373,12 +373,12 @@ export default function Button({ text }) {
 <br>
 <br>
 
-:sparkles: Let's give it a fancy color: #ffa500
+✨  Let's give it a fancy color: #ffa500
 
 <br>
 <br>
 
-###### Review Questions
+#### Review Questions
 
 **❓ What's the difference when naming the files for CSS stylesheets vs. CSS Modules?**
 
@@ -399,7 +399,7 @@ function SmallComponent(props) {
 <br>
 <br>
 
-##### Example 6 : Sass
+#### Example 6 : Sass
 
 <br>
 
@@ -447,12 +447,12 @@ Some fun things to explore in sass -
   -Interpolation
   -Placeholders
 
-:sparkles: Let's give it some fancy colors: #ce649a & 
+✨  Let's give it some fancy colors: #ce649a & hotpink
 
 <br>
 <br>
 
-###### Review Questions
+#### Review Questions
 
 **❓ What is sass?**
 
