@@ -17,7 +17,7 @@ type: "lab"
 
 ## Intro
 
-In the lesson earlier you learned to consume a third-party API in React and invoke the call to that API using the `useEffect` hook.
+In previous lessons you learned to consume a third-party API in React and invoke the call to that API using the `useEffect` hook.
  
 <!-- 2. Created a "service" module to organize `fetch` calls within. -->
 
@@ -47,13 +47,15 @@ To get set up for this lesson:
 
 ## Exercises
 
-**Styling in this lab is secondary to completing the functionality**
-
 1. Research documentation of [SWAPI](https://swapi.dev/documentation) to find the endpoint for the `starships` resource.
 2. Start by writing everything in `App.js`; the creation of additional components can come later as you scale the project.
 3. Use the `useEffect` hook to fetch all the `"starship"` data from the API and store that data in component state using the `useState` hook.
 4. Map over the array of starship objects in component state and render a card for each starship. 
 5. Cards should contain the text of the starship's name.  
+
+**Styling in this lab is secondary to completing the functionality**
+
+6. Choose a css in React method and apply some style to your components
 
 <br>
 <br>
