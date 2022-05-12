@@ -67,10 +67,10 @@ reportWebVitals();
 A common convention is to create two folders, components and pages. Any component that is used as a piece of UI goes in the components folder, any component meant to act as a "page" of the website goes in pages.
 
 - create a components and pages folder
-- create a currencies.js, main.js, price.js file in the pages folder
+- create a Currencies.js, Main.js, Price.js file in the pages folder
 - create the component boilerplate in each component
 
-main.js
+Main.js
 
 ```js
 import React from "react";
@@ -82,7 +82,7 @@ const Main = (props) => {
 export default Main;
 ```
 
-currencies.js
+Currencies.js
 
 ```js
 import React from "react";
@@ -94,7 +94,7 @@ const Currencies = (props) => {
 export default Currencies;
 ```
 
-price.js
+Price.js
 
 ```js
 import React from "react";
@@ -141,9 +141,9 @@ Right now only the Main component is rendering cause we are on the main page, "/
 
 ## Navigation
 
-In your components folder create a nav.js
+In your components folder create a Nav.js
 
-components/nav.js
+components/Nav.js
 
 ```js
 import React from "react";
@@ -183,7 +183,7 @@ Next add the following styles to index.css
 }
 ```
 
-import the nav component into app.js
+import the nav component into App.js
 
 ```js
 import React from "react";
@@ -260,7 +260,7 @@ In this component we will be doing the following
 - Looping over that array to generate a link for each one to the price route
 - The currency symbol should be placed in the :symbol part of the URL
 
-currencies.js
+Currencies.js
 
 ```js
 import React from "react";
@@ -310,7 +310,7 @@ Once you have your api key here is what we will do:
 - save the resulting data in state and render it
 - loaded and loading function for rendering the data if exists
 
-price.js
+Price.js
 
 ```js
 import React from "react";
