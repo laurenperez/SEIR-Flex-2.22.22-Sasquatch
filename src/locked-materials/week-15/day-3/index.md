@@ -14,5 +14,5 @@ topics: "React Recoil & React-Request"
 #### Submit Group Lab 
 
 
-- [**Lecture** - React Recoil & React-Request ](/react-fundamentals/week-15/day-3/lecture-materials/react-recoil-and-react-request)
+- [**Lecture:** Token-based Auth with React & JWTs](/react-fundamentals/week-15/day-3/lecture-materials/token-based-auth-with-react-and-jwts)
 - [**Group Lab** - Finish Bookmark'd ](/react-fundamentals/week-15/day-3/labs/bookmarkd-lab) - **Deliverable**
