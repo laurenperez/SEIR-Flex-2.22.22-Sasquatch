@@ -35,10 +35,9 @@ In your React folder do the following
 
 The first component we'll explore is BrowserRouter which is underneath the hood a context provider allowing all the features of router to be available to its children. We want all of our application to have the router features so we'll wrap the App component in index.js and to make it more semantic we'll rename the component Router.
 
-index.js
+index.jsx
 
 ```js
-import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
@@ -67,13 +66,12 @@ reportWebVitals();
 A common convention is to create two folders, components and pages. Any component that is used as a piece of UI goes in the components folder, any component meant to act as a "page" of the website goes in pages.
 
 - create a components and pages folder
-- create a Currencies.js, Main.js, Price.js file in the pages folder
+- create a Currencies.jsx, Main.jsx, Price.jsx file in the pages folder
 - create the component boilerplate in each component
 
-Main.js
+Main.jsx
 
 ```js
-import React from "react";
 
 const Main = (props) => {
   return <h1>This is the Main Component</h1>;
@@ -82,10 +80,9 @@ const Main = (props) => {
 export default Main;
 ```
 
-Currencies.js
+Currencies.jsx
 
 ```js
-import React from "react";
 
 const Currencies = (props) => {
   return <h1>This is the Currencies Component</h1>;
@@ -94,10 +91,9 @@ const Currencies = (props) => {
 export default Currencies;
 ```
 
-Price.js
+Price.jsx
 
 ```js
-import React from "react";
 
 const Price = (props) => {
   return <h1>This is the Price Component</h1>;
@@ -113,7 +109,6 @@ Now we will will import the Route  & Routes component into App, this will allow 
 App.js
 
 ```js
-import React from "react";
 import "./App.css";
 //Import route and our components
 import { Route, Routes } from "react-router-dom";
@@ -141,12 +136,11 @@ Right now only the Main component is rendering cause we are on the main page, "/
 
 ## Navigation
 
-In your components folder create a Nav.js
+In your components folder create a Nav.jsx
 
-components/Nav.js
+components/Nav.jsx
 
 ```js
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Nav = (props) => {
@@ -186,7 +180,6 @@ Next add the following styles to index.css
 import the nav component into App.js
 
 ```js
-import React from "react";
 import "./App.css";
 //Import route and our components
 import { Route, Routes } from "react-router-dom";
@@ -216,7 +209,6 @@ A Few things to notice:
 - The function of the link tags is to change the URL bar to match the "to" prop, look at the change in the URL bar when you click on them. The reason we don't use an a tag is cause clicking an a tag triggers the browser to make a request and refresh the page which will break router (cause there is no server to respond to the browsers request, the url is merely a simulation of multiple pages).
 
 ```js
-import React from "react";
 import "./App.css";
 //Import route and our components
 import { Route, Routes } from "react-router-dom";
@@ -263,7 +255,6 @@ In this component we will be doing the following
 Currencies.js
 
 ```js
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Currencies = (props) => {
@@ -310,10 +301,9 @@ Once you have your api key here is what we will do:
 - save the resulting data in state and render it
 - loaded and loading function for rendering the data if exists
 
-Price.js
+Price.jsx
 
 ```js
-import React from "react";
 import {useParams} from "react-router-dom"
 
 const Price = (props) => {
