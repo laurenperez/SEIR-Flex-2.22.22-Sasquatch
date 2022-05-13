@@ -10,7 +10,7 @@ topics: "React Router"
 # Week 12 - Day 3
 #### React Router
 
-- [**Lecture:** Bitcoin Router Build](/react-fundamentals/week-12/day-3/lecture-materials/bitcoin-router-build/)
+- [**Lecture:** Bitcoin Router Build](/react-fundamentals/week-12/day-3/lecture-materials/react-router-bitcoin-price-finder/)
 
 - [**Lab:** React Router Stocks](/react-fundamentals/week-12/day-3/labs/react-router-lab-stocks/) **Deliverable**
 

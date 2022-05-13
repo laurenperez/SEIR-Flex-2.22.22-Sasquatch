@@ -1,12 +1,10 @@
 ---
 track: "React Fundamentals"
 title: "React Router BitCoin PriceFinder"
-week: 13
-day: 2
+week: 12
+day: 3
 type: "lecture"
 ---
-
-<!-- This is the old lecture with the old API that we could not get working -->
 
 ## React Router BitCoin PriceFinder
 
@@ -257,14 +255,11 @@ import { Link } from "react-router-dom"
 
 const Currencies = (props) => {
   const currencies = [
-    { name: "Bitcoin", symbol: "BTC" },
-    { name: "Litecoin", symbol: "LTC" },
-    { name: "Ethereum", symbol: "ETH" },
-    { name: "Ethereum Classic", symbol: "ETC" },
-    { name: "Stellar Lumens", symbol: "XLM" },
-    { name: "Dash", symbol: "DASH" },
-    { name: "Ripple", symbol: "XRP" },
-    { name: "Zcash", symbol: "ZEC" },
+    { name: "Bitcoin", symbol: "BTCUSD" },
+    { name: "Litecoin", symbol: "LTCUSD" },
+    { name: "Ethereum", symbol: "ETHUSD" },
+    { name: "Zcash", symbol: "ZECUSD" },
+    { name: "Bitcoin Cash", symbol: "BCHUSD" },
   ]
 
   return (
@@ -289,7 +284,7 @@ Notice when we click any of the links it takes us to the price component, use th
 
 ## The Price Component
 
-Before we create this component take a moment to get your FREE Api key from coinapi.io. Keep in mind you can only make 100 requests per day with your free apiKey.
+Before we create this component take a moment to get your FREE Api key from [iexcloud.io](https://iexcloud.io/cloud-login?r=https%3A%2F%2Fiexcloud.io%2Fconsole%2Fhome#/register). Keep in mind you can only make 50,000 requests per month with your free apiKey.
 
 Once you have your api key here is what we will do:
 
@@ -311,7 +306,7 @@ const Price = (props) => {
   const params = useParams()
   const symbol = params.symbol
   // Using the other two variables to create our URL
-  const url = `http://rest-sandbox.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`
+  const url = `https://cloud.iexapis.com/stable/crypto/${symbol}/price?token=${apiKey}`
 
   //state to hold the coin data
   const [coin, setCoin] = React.useState("null")
@@ -332,10 +327,8 @@ const Price = (props) => {
   const loaded = () => {
     return (
       <div>
-        <h1>
-          {coin.asset_id_base}/{coin.asset_id_quote}
-        </h1>
-        <h2>{coin.rate}</h2>
+        <h1>{symbol}}</h1>
+        <h2>{coin.price}</h2>
       </div>
     )
   }
