@@ -4,12 +4,10 @@ title: "Week 24 - Day 2"
 week: 24
 day: 2
 type: "homepage"
-topics: "Project 4 Week"
+topics: "CS Week"
 ---
 
 
 # Week 24 - Day 2
 
-#### Project 4 Week
-- **Activity:** Teams Work on Project 4
-
+Topics TBD

@@ -4,11 +4,14 @@ title: "Week 20 - Day 1"
 week: 20
 day: 1
 type: "homepage"
-topics: "Django URLs, Views & Templates"
+topics: "Intro to Django: URLs, Views & Templates"
 ---
 
 
 # Week 20 - Day 1
+
+#### Intro to Django
+- [**Lecture:** Intro to Django](/second-language/week-20/day-1/lecture-materials/intro-to-django/)
 
 #### Django URLs, Views & Templates
 - [**Lecture:** Django URLs, Views & Templates](/second-language/week-20/day-1/lecture-materials/django-urls-views-and-templates/)

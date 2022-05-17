@@ -2,7 +2,7 @@
 track: "Second Language"
 title: "Deploying a Django App to Heroku"
 week: 23
-day: 2
+day: 1
 type: "walk-thru"
 ---
 

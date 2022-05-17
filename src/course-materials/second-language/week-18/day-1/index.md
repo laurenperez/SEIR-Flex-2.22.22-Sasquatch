@@ -4,10 +4,11 @@ title: "Week 18 - Day 1"
 week: 18
 day: 1
 type: "homepage"
-topics: "TBD"
+topics: "Intro to Python"
 ---
 
 # Week 18 - Day 1
 
-- [**Lecture:** Intro to SQL and Relational Databases](/second-language/week-18/day-1/lecture-materials/intro-to-sql-and-relational-databases/)
-- [**Lab:** Carmen San Diego Lab](/second-language/week-18/day-1/labs/carmen-san-diego-lab/) - **Non-Deliverable**
+
+- [**Activity:** Installfest Phase 3](/second-language/week-18/day-1/lecture-materials/prepare-for-second-language-unit)
+- [**Lecture:** Intro to Python](/second-language/week-18/day-1/lecture-materials/intro-to-python/)

@@ -1,8 +1,8 @@
 ---
 track: "Second Language"
 title: "Intro to Django Class-Based Views (CBVs)"
-week: 21
-day: 1
+week: 20
+day: 3
 type: "lecture"
 ---
 

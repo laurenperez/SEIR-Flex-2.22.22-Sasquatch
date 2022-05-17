@@ -4,12 +4,13 @@ title: "Week 18 - Day 2"
 week: 18
 day: 2
 type: "homepage"
-topics: "Into to SQL and Relational Databases"
+topics: "Python Control Flow"
 ---
 
 # Week 18 - Day 2
 
-#### Into to SQL and Relational Databases
+#### Python Control Flow
 
-
-- [**Activity:** Installfest Phase 3](/second-language/week-18/day-2/lecture-materials/prepare-for-second-language-unit)
+- [**Lecture:** Intro to Python Control Flow](/second-language/week-18/day-2/lecture-materials/intro-to-python-control-flow/)
+- [**Lab:** Python Control Flow Lab](/second-language/week-18/day-2/labs/python-control-flow-lab/) - **Deliverable**
+- [**Bonus Lab:** Python Challenges Lab](/second-language/week-18/day-2/labs/python-challenges-lab/) - **Non-Deliverable**

@@ -89,7 +89,7 @@ Here you'll find
 | 14    | Full MERN Build Parts 1, 2 & 3 and  *Memorial Day Holiday*             |
 | 15    | Project Management, BookMarked Group Project                           |
 | 16    | Project Week - Project 3                                               |
-| 17    | Project 3 - Presentations                                              |
+| 17    | Project 3 - Presentations & Install Fest Phase 3                       |
 
 <br>
 <br>
@@ -98,15 +98,16 @@ Here you'll find
 
 ### 🔒 Unit Four: Second Language - **Locked**
 
-| Week | Topics                                                                      |
-| ---- | --------------------------------------------------------------------------- |
-| 18   | Intro SQL/Relational Databases & Python                                     |
-| 19   | Intro to Python Container, Functions, Classes & Django                      |
-| 20   | Django URLs, Views, Templates, Models & Independence Day Holiday            |
-| 21   | Django Model Relationships, Class Based Views & Photo Upload with Amazon S3 |
-| 22   | Project 4 Planning & Django Auth                                            |
-| 23   | Project 4 Week                                                              |
-| 24   | Project 4 Week, Presentations & Begin Portfolio Project                     |
-| 25   | Portfolio Project Week & Graduation 🎉                                      |
+| Week | Topics                                                                              |
+| ---- | ----------------------------------------------------------------------------------- |
+| 18   | Intro to Python, Control flow, Containers, & Functions                              |
+| 19   | Python Classes, Intro to SQL and Relational Databases, (Independence Day Holiday)   |
+| 20   | Django Views, Templates & Models, Relational Data Design, Class Based Views         |
+| 21   | Django Model Relationships, Upload Photos with Amazon S3, Django Auth               |
+| 22   | Project 4 Week                                                                      |
+| 23   | Project 4 Week Presentations & Start CS Week                                        |
+| 24   | CS Week - Data Structures, Algorythms, Searches  &  Start Capstone Project          |
+| 25   | Capstone Project Week                                                               |
+| 26   | Capstone Project Presentations & Graduation 🎉                                      |
 
 <div style="color: grey;"></div>

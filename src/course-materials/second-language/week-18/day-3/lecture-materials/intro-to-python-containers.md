@@ -1,8 +1,8 @@
 ---
 track: "Second Language"
 title: "Intro to Python Containers"
-week: 21
-day: 1
+week: 18
+day: 3
 type: "lecture"
 ---
 

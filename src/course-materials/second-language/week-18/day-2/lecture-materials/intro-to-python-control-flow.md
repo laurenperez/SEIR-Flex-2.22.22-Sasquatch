@@ -2,7 +2,7 @@
 track: "Second Language"
 title: "Intro to Python Control Flow"
 week: 18
-day: 3
+day: 2
 type: "lecture"
 ---
 
