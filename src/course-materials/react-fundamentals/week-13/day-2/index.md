@@ -12,4 +12,4 @@ topics: "Full Stack React"
 #### Full Stack React
 
 
-- [**Lecture:** Full Stack React - React Dev Skills Part 2](/react-fundamentals/week-13/day-2/lecture-materials/full-stack-react) - **Deliverable**
+- [**Lecture:** Full Stack React - React Dev Skills Part 2](/react-fundamentals/week-13/day-2/lecture-materials/full-stack-react) - **Non-Deliverable**
