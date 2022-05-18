@@ -230,11 +230,11 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 // wrap our application inside of router to enable using router
 ReactDOM.render(
-  <Router>
-    <React.StrictMode>
+  <React.StrictMode>
+    <Router>
       <App />
-    </React.StrictMode>
-  </Router>,
+    </Router>
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
@@ -320,7 +320,7 @@ import "./App.css";
 // IMPORT COMPONENTS
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom"
 // IMPORT PAGES
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -333,17 +333,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/projects">
-          <Projects URL={URL} />
-        </Route>
-        <Route path="/about">
-          <About URL={URL} />
-        </Route>
-      </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects URL={URL}/>} />
+          <Route path="/about" element={<About URL={URL}/>} />
+        <Routes>
       <Footer />
     </div>
   );
@@ -376,15 +370,9 @@ function Header(props) {
     <header>
       <h1>My Portfolio Page</h1>
       <nav style={navStyle}>
-        <Link to="/">
-          <div>HOME</div>
-        </Link>
-        <Link to="/about">
-          <div>ABOUT</div>
-        </Link>
-        <Link to="/projects">
-          <div>PROJECTS</div>
-        </Link>
+        <Link to="/">HOME</Link>
+        <Link to="/about">ABOUT</Link>
+        <Link to="/projects">PROJECTS</Link>
       </nav>
     </header>
   );
