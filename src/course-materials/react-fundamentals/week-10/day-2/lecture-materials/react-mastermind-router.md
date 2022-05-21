@@ -1,12 +1,12 @@
 ---
 track: "React Fundamentals"
-title: "Intro to React Router"
-week: 14
-day: 3
+title: "React Mastermind - Intro to React Router"
+week: 10
+day: 2
 type: "lecture"
 ---
 
-# Intro to React Router
+# Intro to React Router (Note: React Router 4 Depricated)
 
 
 | Students Will Be Able To: |
@@ -880,7 +880,6 @@ Of course, you must ensure that `<Route>`'s `history` prop is passed to any comp
 ## References
 
 - [React Router - Web](https://reacttraining.com/react-router/web/guides/quick-start)
-
 
 
 

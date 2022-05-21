@@ -25,4 +25,3 @@ Lunch Break
 
 Hungry for More? 
 - [**React's Official Tutorial - React Tic-Tac-Toe**](https://reactjs.org/tutorial/tutorial.html) - Option 2
-- [**Bonus Lab - React Mastermind**](/react-fundamentals/week-10/day-3/labs/react-mastermind/)
