@@ -187,15 +187,16 @@ web: npm start
 
 #### Deploying to Heroku
 
-- Head over to heroku and create a new project
+- Make sure you are logged into heroku by typing `heroku login` in your terminal - follow the prompts to log in. 
 
-- under the deploy section, connect your github repo
+- Create a new heroku project `heroku create <your preferred project name>`
 
-- enable automatic deploys
+- Verify the command was successful by verifying that a git remote named `heroku` was created `git remote -v`
 
-- then under manual deploys hit the "deploy" button
+- Stage and commit your code, then use `git push heroku main` to push to heroku
 
-- when its done, click the "open app" button in the upper right of the dashboard
+- Each of the key:value pairs in your app's `.env` file must be set on Heroku using the following command:
+`heroku config:set KEY=VALUE`
 
 - go to `HEROKU_URL/` make sure you see "Hello World"
 
