@@ -8,7 +8,7 @@ type: "lecture"
 
 # MERN Stack Build Part 1
 
-In this build we will:
+In this full build we will:
 
 1. Build an Express API
 1. Use Mongo/Mongoose with 1 model
@@ -402,20 +402,15 @@ app.listen(PORT, () => console.log(`listening on PORT ${PORT}`))
 <br>
 <br>
 
-## Lab Part 1 - Cheese App
 
-1. Create another folder called "Cheese App"
+## Lab Part 1 - Your Own Full Stack MERN Application - **Deliverable**
 
-1. Create a backend and frontend folder like you did for today's lesson
+1. Create another project folder
 
-1. Create a cheese API with index, create, update and delete routes
+2. Create the backend and frontend folders like you did for today's lesson
 
-1. The model should look like:
+3. Create an API with index, create, update and delete routes
 
-```shell
-name: String,
-countryOfOrigin: String,
-image: String
-```
+4. Create your model schema
 
 5. Test the API, deploy the API, test the deployed API

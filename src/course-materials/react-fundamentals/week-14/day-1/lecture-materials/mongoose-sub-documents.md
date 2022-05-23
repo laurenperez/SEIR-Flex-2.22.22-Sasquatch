@@ -1,8 +1,8 @@
 ---
-track: "Backend Fundamentals"
+track: "React Fundamentals"
 title: "Mongoose Sub-Documents"
-week: 2
-day: 5
+week: 14
+day: 1
 type: "lecture"
 ---
 

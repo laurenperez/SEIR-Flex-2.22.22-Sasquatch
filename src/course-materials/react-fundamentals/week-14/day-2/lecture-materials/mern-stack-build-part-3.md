@@ -485,10 +485,12 @@ _NOTE, if you wanted to deploy to Version you'd include a `vercel.json` with the
 <br>
 <br>
 
-## Lab - Complete Your Cheese App
+## Lab - Complete Your Full Stack MERN App - **Deliverable**
 
-Complete your cheese app using the steps of todays lessons adding the following:
+Complete your app using the steps of todays lessons adding the following:
 
-1. The ability see an individual cheese
-1. The ability edit a cheese
-1. The ability to delete a cheese
+1. The ability see an individual show pages
+
+2. The ability edit a model
+
+3. The ability to delete a model

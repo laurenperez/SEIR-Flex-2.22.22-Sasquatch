@@ -421,6 +421,8 @@ You should now be able to see all the people and create people.
 <br>
 <br>
 
-## Lab
+## Lab Part 2 - **Deliverable**
 
-Begin the frontend for your Cheese app, and create the ability to display and create cheeses like our People app.
+1. Begin the frontend for your full stack MERN app
+
+2. Add the functionality to create and display all of your model items on the frontend
