@@ -12,17 +12,19 @@ type: "lecture"
 <br>
 <br>
 
-## Lesson Objectives
+<!-- ## Lesson Objectives
 
 1. Create a schema for properties of models that are objects
 
 <br>
 <br>
-<br>
+<br> -->
 
 ## Create a schema for properties of models that are objects
 
-Properties of models can be objects and arrays (see below)
+Properties of models can be objects and arrays (see example below)
+
+Consider you have articles by various authors...
 
 ```javascript
 const articleSchema = new Schema({
