@@ -54,6 +54,8 @@ It's important to consider the positions of the hand(s) when holding a phone and
 
 [source](https://alistapart.com/article/how-we-hold-our-gadgets/)
 
+<br>
+<br>
 
 ### Make your buttons descriptive
 
@@ -62,6 +64,9 @@ Well-designed buttons tell the user exactly what will happen when they click.
 <img src="https://assets.justinmind.com/wp-content/webp-express/webp-images/uploads/2020/07/descriptive-microcopy-button-design.png.webp">
 
 - [source: Tips for styling mobile buttons](https://www.justinmind.com/blog/button-design-websites-mobile-apps/)
+
+<br>
+<br>
 
 ### Keep your UI simple and let it breathe 
 
@@ -82,11 +87,22 @@ Here is some simple mobile design inspiration:
 
 [source: Salon App](https://dribbble.com/shots/15723703-Salon-App/)
 
+<br>
+<br>
+
 ### The bottom Nav is where it’s at
 
 - No really, that is where it's at, or [should be](https://uxplanet.org/perfect-bottom-navigation-for-mobile-app-effabbb98c0f) on mobile. 
 
 <img src="https://miro.medium.com/max/1400/1*d55w8RiaAGkt2UvdpK5OvQ.png" />
+
+### Icons are great for conveing extra meaning in a small space 🎉
+
+Here are some popular Icon libraries:
+
+ - [Fontawesome](https://fontawesome.com/)
+ - [Flaticon](https://www.flaticon.com/)
+ - [Icons8](https://icons8.com/)
 
 <br>
 <br>
