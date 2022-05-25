@@ -14,7 +14,10 @@ type: "lecture"
 
 ## Setup
 
-1. Open terminal in frontend folder
+1. Navigate into your `express-react` folder
+1. Inside you should only have your `backend` repo
+1. Create your frontend react app `npx create-react-app@latest frontend`
+1. Cd into frontend
 1. Install react router and sass `npm install react-router react-router-dom sass`
 1. Create a file called styles.scss in the `/src` folder
 
