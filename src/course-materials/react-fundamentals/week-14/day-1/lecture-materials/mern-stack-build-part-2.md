@@ -15,7 +15,7 @@ type: "lecture"
 ## Setup
 
 1. Open terminal in frontend folder
-1. Install react router and sass `npm install react-router-dom sass`
+1. Install react router and sass `npm install react-router react-router-dom sass`
 1. Create a file called styles.scss in the `/src` folder
 
 <br>
@@ -37,11 +37,11 @@ import App from "./App"
 import reportWebVitals from "./reportWebVitals"
 
 ReactDOM.render(
-  <Router>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Router>,
+  <React.StrictMode>
+      <Router>
+          <App />
+      </Router>
+    </React.StrictMode>,
   document.getElementById("root")
 )
 
@@ -82,7 +82,7 @@ Our desired component Architecture:
 -> App
   -> Header
   -> Main |state: people|
-    -> Switch
+    -> Routes
       -> Route |path: "/"|
         -> Index |Props: people, createPeople|
       -> Route |path="/people/:id|
@@ -121,19 +121,17 @@ export default App
 Let's create our routes:
 
 ```jsx
-import { Route, Switch } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import Index from "../pages/Index"
 import Show from "../pages/Show"
 
 function Main(props) {
   return (
     <main>
-      <Switch>
-        <Route exact path="/">
-          <Index />
-        </Route>
-        <Route path="/people/:id" render={(rp) => <Show {...rp} />} />
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Index />} />
+        <Route path="/people/:id" element={<Show />} />
+      <Routes>
     </main>
   )
 }
@@ -150,7 +148,7 @@ export default Main
 Let's put the following in `Header.js`:
 
 ```jsx
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 function Header(props) {
   return (
@@ -240,7 +238,7 @@ So let's update Main to have:
 
 ```jsx
 import { useEffect, useState } from "react"
-import { Route, Switch } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import Index from "../pages/Index"
 import Show from "../pages/Show"
 
@@ -272,12 +270,21 @@ function Main(props) {
 
   return (
     <main>
-      <Switch>
-        <Route exact path="/">
-          <Index people={people} createPeople={createPeople} />
-        </Route>
-        <Route path="/people/:id" render={(rp) => <Show {...rp} />} />
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={
+          <Index 
+            people={people} 
+            createPeople={createPeople} 
+          />} />
+        <Route
+          path="/people/:id"
+          element={
+            <Show
+              people={people}
+            />
+          }
+        />
+      </Routes>
     </main>
   )
 }
