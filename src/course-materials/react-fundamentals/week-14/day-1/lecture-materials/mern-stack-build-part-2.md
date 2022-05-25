@@ -28,7 +28,7 @@ Update `index.js` to like like so:
 
 ```jsx
 import React from "react"
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client"
 // IMPORT SCSS FILE TO BE SOURCE OF STYLING
 import "./styles.scss"
 // IMPORT ROUTER
@@ -36,13 +36,13 @@ import { BrowserRouter as Router } from "react-router-dom"
 import App from "./App"
 import reportWebVitals from "./reportWebVitals"
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(
   <React.StrictMode>
-      <Router>
-          <App />
-      </Router>
-    </React.StrictMode>,
-  document.getElementById("root")
+    <Router>
+      <App />
+    </Router>
+  </React.StrictMode>
 )
 
 // If you want to start measuring performance in your app, pass a function
@@ -148,7 +148,7 @@ export default Main
 Let's put the following in `Header.js`:
 
 ```jsx
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 function Header(props) {
   return (
@@ -271,19 +271,12 @@ function Main(props) {
   return (
     <main>
       <Routes>
-        <Route exact path="/" element={
-          <Index 
-            people={people} 
-            createPeople={createPeople} 
-          />} />
         <Route
-          path="/people/:id"
-          element={
-            <Show
-              people={people}
-            />
-          }
+          exact
+          path="/"
+          element={<Index people={people} createPeople={createPeople} />}
         />
+        <Route path="/people/:id" element={<Show people={people} />} />
       </Routes>
     </main>
   )
