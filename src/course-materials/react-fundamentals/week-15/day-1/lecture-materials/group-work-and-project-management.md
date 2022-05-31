@@ -192,7 +192,7 @@ You're creating a dating app with a small group!  How do you get started?!
 *After this lesson students will be able to*
 - Describe the different steps of the git workflow process
 - Explain basic git commands in terms of this model, e.g., commit, add, log
-- Safely work on a feature branch and merge it back to the master branch
+- Safely work on a feature branch and merge it back to the mainr branch
 - Be aware of 2 pitfalls when working with git in a Group and how to resolve/avoid them.
 
 
@@ -283,7 +283,7 @@ Look at the log files:
 ```sh
 git log
 
-commit 6f25491daadbd6ecabe0bd9499016be4133abd3b (HEAD -> master)
+commit 6f25491daadbd6ecabe0bd9499016be4133abd3b (HEAD -> main)
 Author: Joe Keohan <jkeohan@gmail.com>
 Date:   Wed Jul 15 08:10:31 2020 -0400
 
@@ -295,7 +295,7 @@ Try using the `git log --oneline` flag
 ```sh
 git log --oneline
 
-6f25491 (HEAD -> master) added hello function
+6f25491 (HEAD -> main) added hello function
 ```
 
 
@@ -309,12 +309,12 @@ git remote add origin git/github remote repo url
 Push to the origin branch to the remote repo
 
 ```sh
-git push origin master
+git push origin main
 ```
 
 ### Feature Branch - Code Along
 
-As a project grows, it can help substantially to break out sets of changes into their own branches which are subsequently merged back into the `master` branch.  As you know, these branches can also be pushed to github.  
+As a project grows, it can help substantially to break out sets of changes into their own branches which are subsequently merged back into the `main` branch.  As you know, these branches can also be pushed to github.  
 
 ![](https://i.imgur.com/o002Fk0.png)
 
@@ -330,7 +330,7 @@ Confirm the branch exists and is the active branch: git branch
 
 ```sh
 * feature-bye
-  master
+  main
 ```
 
 Create a new file called: `bye.js`
@@ -363,7 +363,7 @@ Date:   Wed Jul 15 08:17:21 2020 -0400
 
     feature-bye - added bye function
 
-commit 6f25491daadbd6ecabe0bd9499016be4133abd3b (master)
+commit 6f25491daadbd6ecabe0bd9499016be4133abd3b (main)
 Author: Joe Keohan <jkeohan@gmail.com>
 Date:   Wed Jul 15 08:10:31 2020 -0400
 
@@ -376,13 +376,13 @@ Try using the `git log --oneline` flag
 git log --online 
 
 065aecf (HEAD -> feature-bye) feature-bye - added bye function
-6f25491 (master) feature-hello - added hello function
+6f25491 (main) feature-hello - added hello function
 ```
 
-Chekcout the master branch and confirm that bye.js file doesn't exist
+Chekcout the main branch and confirm that bye.js file doesn't exist
 
 ```sh
- git checkout master
+ git checkout main
  ```
 
 Git log and confirm that the commit message from the feature-bye branch doesn't exist
@@ -390,14 +390,14 @@ Git log and confirm that the commit message from the feature-bye branch doesn't 
 ```sh
 git log
 
-commit 6f25491daadbd6ecabe0bd9499016be4133abd3b (HEAD -> master)
+commit 6f25491daadbd6ecabe0bd9499016be4133abd3b (HEAD -> main)
 Author: Joe Keohan <jkeohan@gmail.com>
 Date:   Wed Jul 15 08:10:31 2020 -0400
 
     feature-hello - added hello function
 ```
 
-Merge the feature-bye branch into master
+Merge the feature-bye branch into main
 
 ```sh
 git merge feature-bye
@@ -413,7 +413,7 @@ Fast-forward
 
 Git log and confirm that the feature-bye branch is now included in the logs
 ```sh
-commit 065aecf896862a0f8446a6da34106f82cf3018b6 (HEAD -> master, feature-bye)
+commit 065aecf896862a0f8446a6da34106f82cf3018b6 (HEAD -> main, feature-bye)
 Author: Joe Keohan <jkeohan@gmail.com>
 Date:   Wed Jul 15 08:17:21 2020 -0400
 
@@ -451,13 +451,13 @@ Let's assume that the team has also downloaded and merged the feature branch we 
 git push origin --delete feature-bye
 ```
 
-That completes the successful workflow of creating a feature branch and merging to master 
+That completes the successful workflow of creating a feature branch and merging to main
 
 
 ### Conflict Resolution
 
 Feature branches are great but can lead to difficulties
-when overlapping or incompatible sets of changes are merged back in to a common branch, e.g., `master`.  `Git` is pretty good about safely handling multiple streams of changes, but sometimes you have to manually pitch in to get the job done.
+when overlapping or incompatible sets of changes are merged back in to a common branch, e.g., `main`.  `Git` is pretty good about safely handling multiple streams of changes, but sometimes you have to manually pitch in to get the job done.
 
 If you are trying to use `git merge` and it produces a conflict the output will look something like this:
 
@@ -497,10 +497,10 @@ git commit -m  'feature-upperCase - added toUpperCase function'
 ```
 
 ```sh
-git checkout master
+git checkout main
 ```
 
-Merge feature-upperCase to master
+Merge feature-upperCase to main
 
 ```sh
 git merge feature-upperCase
@@ -526,14 +526,14 @@ git commit -m  'feature-lowerCase - added toLowerCase function'
 ```
 
 
-Checkout master
+Checkout main
 
 ```sh
-git checkout master
+git checkout main
 ```
 
 
-Merge feature-lowerCase with master
+Merge feature-lowerCase with main
 
 ```sh
 git merge feature-lowerCase
@@ -555,9 +555,8 @@ You should see a message indicating there has been a conflict and when you exami
 
 Resolve conflict by either removing the utility lines (a rarely available solution but it works in this case), or remove one set of changes.  Either way, whatever the state of the file when we save+quit, that will be what ends up being committed so make sure it's valid!
 
-### Exercise: Local Conflict Resolution
-Go [here](local_lab.md) and follow the instructions
-
+<!-- ### Exercise: Local Conflict Resolution
+Go [here](local_lab.md) and follow the instructions -->
 
 
 ## Pull Request And Merging In Github
@@ -575,8 +574,8 @@ The instructor will then walk through the process of approving and merging the p
 
 These may prove helpful in the following exercise
 
-## Exercise: Group Gitting
-It's Go Time: [Git 'r Done](group_lab)
+<!-- ## Exercise: Group Gitting
+It's Go Time: [Git 'r Done](group_lab) -->
 
 
 ## Bonus:  Rebasing branches
@@ -588,9 +587,9 @@ If time permits the instructor willl demo how to rebase branches.
 
 [`git rebase`](https://git-scm.com/docs/git-rebase)
 
-Rebasing rewrites history.  This adds the commits from another branch and puts your commits on top of your branch.  (Actually it puts _new copies_ of your commits on top). Typically, we rebase `master` from another branch.  This does not add an extra merge-commit.
+Rebasing rewrites history.  This adds the commits from another branch and puts your commits on top of your branch.  (Actually it puts _new copies_ of your commits on top). Typically, we rebase `main` from another branch.  This does not add an extra merge-commit.
 
-**Ex**: From some branch: `git rebase master` will take anything that was added to master since branched off (or last rebased) and put those commits _before yours_.  Your commits are then added on top of your branch.
+**Ex**: From some branch: `git rebase main` will take anything that was added to main since branched off (or last rebased) and put those commits _before yours_.  Your commits are then added on top of your branch.
 
 Technically, `git pull` is a shorthand for `git fetch origin HEAD` together with `git merge origin/HEAD`.  In other words, `pull` is an alias for fetching the changes from origin and merging them into the local copy of the branch.  adding the `--rebase` flag to `pull` will rebase rather than merge, thereby not adding a merge commit to your history but carrying with it additional pain when conflicts emerge.
 

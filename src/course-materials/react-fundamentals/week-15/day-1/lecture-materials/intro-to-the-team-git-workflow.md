@@ -64,11 +64,11 @@ To help illustrate collaborating on a project using Git/GitHub, consider the fol
 **Manager** & **Programmer**:
 
 1. Frequently ensure that you have the most recently merged code on your local computer:
-	- Checkout the `master` branch with `git checkout master`. *Only
-   pull when you are on `master`.*
-	- Now you can `$ git pull upstream master`. **Managers** will always use `origin` in place of `upstream`.
+	- Checkout the `main` branch with `git checkout main`. *Only
+   pull when you are on `main`.*
+	- Now you can `$ git pull upstream main`. **Managers** will always use `origin` in place of `upstream`.
 2. **Use a feature branch** with `$ git checkout <feature_branch_name>`;
-   add `-b` to create a new branch if necessary. Most students will use their name as the name of the branch. **You should never write code while in the `master` branch**.
+   add `-b` to create a new branch if necessary. Most students will use their name as the name of the branch. **You should never write code while in the `main` branch**.
 3. Write some code!
 4. **When you have completed a feature:**
 	- Commit your code as usual...
@@ -99,12 +99,12 @@ To help illustrate collaborating on a project using Git/GitHub, consider the fol
 ### Minimizing Merge Conflicts
 
 1. Try to divide up work so that programmers don't make changes to the same file between merges. 
-2. When notified that branches have been merged into `master` by the manager, **immediately** bring your local repo up to date so that you are working with the latest and greatest:
-	- We're going to need to checkout the master branch to update it, however, _sometimes_ Git will not allow us checkout a different branch if there are uncommitted changes in the current branch.  The solution is to either `stash` or `commit` the changes first. Please read [this StackOverflow](https://stackoverflow.com/questions/22053757/checkout-another-branch-when-there-are-uncommitted-changes-on-the-current-branch) for how to resolve this scenario if Git does not allow the next step (`$ git checkout master`).
-	- `$ git checkout master`
-	- `$ git pull upstream master` **Manager** uses `origin` instead of `upstream`
+2. When notified that branches have been merged into `main` by the manager, **immediately** bring your local repo up to date so that you are working with the latest and greatest:
+	- We're going to need to checkout the main branch to update it, however, _sometimes_ Git will not allow us checkout a different branch if there are uncommitted changes in the current branch.  The solution is to either `stash` or `commit` the changes first. Please read [this StackOverflow](https://stackoverflow.com/questions/22053757/checkout-another-branch-when-there-are-uncommitted-changes-on-the-current-branch) for how to resolve this scenario if Git does not allow the next step (`$ git checkout main`).
+	- `$ git checkout main`
+	- `$ git pull upstream main` **Manager** uses `origin` instead of `upstream`
 	- `$ git checkout <feature_branch_name>`
-	- `$ git merge master` This brings the latest code into your feature branch so that you are always developing with the latest and greatest.
+	- `$ git merge main` This brings the latest code into your feature branch so that you are always developing with the latest and greatest.
 3. Making frequent and small commits and pull requests will help minimize merge conflicts.
 
 
