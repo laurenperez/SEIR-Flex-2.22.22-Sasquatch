@@ -1,3 +1,18 @@
+---
+track: "React Fundamentals"
+title: "Group Work and Project Management"
+week: 15
+day: 1
+type: "lecture"
+---
+# Group Work and Project Management
+
+<br>
+<br>
+<br>
+
+### Sasquatch
+
 
 ![thecustomer](https://i.imgur.com/hi5YlU7.png)
 
@@ -286,7 +301,7 @@ Git `add and commit` changes.
 
 ```sh
 git add .
-git commit -m 'feature-hello - added hello function'
+git commit -m 'added hello function'
 ```
 
 Look at the log files: 
@@ -359,7 +374,7 @@ Git `add and commit` changes.
 
 ```sh
 git add .
-git commit -m 'feature-bye - added bye function'
+git commit -m 'added bye function'
 ```
 
 
@@ -452,7 +467,7 @@ To https://github.com/jkeohan/git-testing.git
 Since the feature branch has already been merged with maater we should delete the local branch
 
 ```sh
-git braanch -d feature-bye
+git branch -d feature-bye
 ```
 
 Let's assume that the team has also downloaded and merged the feature branch we pushed to the remote repo and now delete the remote branch as well. 
@@ -478,13 +493,35 @@ Resolved 'convo.js' using previous resolution.
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-> To see the beginning of the merge conflict in your file, search the file for the conflict marker <<<<<<<. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line <<<<<<< HEAD. Next, you'll see =======, which divides your changes from the changes in the other branch, followed by >>>>>>> BRANCH-NAME.
+ - To see the beginning of the merge conflict in your file, search the file for the conflict marker <<<<<<<. 
+
+ - When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line <<<<<<< HEAD.
+ - Next, you'll see =======, which divides your changes from the changes in the other branch,
+ - followed by >>>>>>> BRANCH-NAME
+
+ ```js
+    <<<<<<< HEAD
+    // CODE A
+    =======
+    // CODE B
+    >>>>>>> branch-b 
+ ```
+
 [source](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
+
+
+### Lets create a conflict
 
 Create a new file called: `stringly.js`
 
 ```sh
 touch stringly.js
+```
+Add and commit the changes
+
+```sh
+git add .
+git commit -m  'added new file'
 ```
 
 Checkout a new branch called `feature-upperCase`
@@ -493,7 +530,7 @@ git checkout -b feaature-upperCase
 ```
 
 
-Add a function called `toUpperCase`
+Add a function to `stringly.js` called `toUpperCase`
 
 ```js
 function toUpperCase() {}
@@ -503,8 +540,33 @@ Add and commit the changes
 
 ```sh
 git add .
-git commit -m  'feature-upperCase - added toUpperCase function'
+git commit -m  'added toUpperCase function'
 ```
+
+```sh
+git checkout main
+```
+
+Checkout a new branch called `feature-lowerrCase`
+
+```sh
+git checkout -b feature-lowerCase
+```
+
+Add a function to `stringly.js` called `toLowerCase`
+
+```js
+function toLowerCase() {}
+```
+
+Add and commit the changes
+
+```sh
+git add .
+git commit -m  'added toLowerCase function'
+```
+
+Checkout main
 
 ```sh
 git checkout main
@@ -516,32 +578,6 @@ Merge feature-upperCase to main
 git merge feature-upperCase
 ```
 
-Checkout a new branch called `feature-lowerrCase`
-
-```sh
-git checkout -b feature-lowerrCase
-```
-
-Add a function called `toUpperCase`
-
-```js
-function toLowerCase() {}
-```
-
-Add and commit the changes
-
-```sh
-git add .
-git commit -m  'feature-lowerCase - added toLowerCase function'
-```
-
-
-Checkout main
-
-```sh
-git checkout main
-```
-
 
 Merge feature-lowerCase with main
 
@@ -549,7 +585,7 @@ Merge feature-lowerCase with main
 git merge feature-lowerCase
 ```
 
-You should see a message indicating there has been a conflict and when you examine stringly.js you will see the following:
+You should see a message indicating there has been a conflict and when you examine `stringly.js` you will see the following:
 
 
   ```js

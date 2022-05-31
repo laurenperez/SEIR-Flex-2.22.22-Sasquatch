@@ -1,8 +1,8 @@
 ---
-track: "Second Language"
+track: "REact Fundamentals"
 title: "Intro To The Team Git Workflow"
-week: 22
-day: 3
+week: 15
+day: 1
 type: "lecture"
 ---
 # Intro To The Team Git Workflow
@@ -11,6 +11,7 @@ type: "lecture"
 <br>
 <br>
 
+### Sasquatch
 
 ### [Click here](https://generalassembly.zoom.us/rec/share/3ZMmQR7dvswco0HnliTR4rPQTfoukY7c3kObg1FVOIArZO2o5WdBFRC3yJ75ytit.exF6BGCjpY-YVQ4Y?startTime=1626553867000) to access recording
 
