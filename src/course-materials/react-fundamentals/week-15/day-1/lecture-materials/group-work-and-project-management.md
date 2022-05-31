@@ -16,7 +16,7 @@ By working with these vehicles, software teams are able to organize their work s
 
 <hr>
 
-## :boom: Scrum
+## Scrum
 
 ### History of Scrum
 
@@ -40,9 +40,9 @@ Anyone is welcome, though normally only scrum team roles contribute.
 
 During the daily scrum, each team-member answers three questions:
 
-:one: What did I do yesterday that helped the development team meet the sprint goal?<br>
-:two: What will I do today to help the development team meet the sprint goal?<br>
-:three: Do I see any impediment that prevents me or the development team from meeting the sprint goal?<br>
+1. What did I do yesterday that helped the development team meet the sprint goal?<br>
+2. What will I do today to help the development team meet the sprint goal?<br>
+3. Do I see any impediment that prevents me or the development team from meeting the sprint goal?<br>
 
 Any impediment (stumbling block, risk or issue) identified in the daily scrum should be captured by the scrum master and displayed on the team's scrum board, with an agreed person designated to working toward a resolution (outside of the daily scrum). No detailed discussions should happen during the daily scrum.
 
@@ -53,7 +53,13 @@ Another popular approach to development is [Kanban](https://www.atlassian.com/ag
 
 ![kanban v scrum](https://i.imgur.com/CI1UgLV.png)
 
-The work of all Kanban teams revolves around a Kanban board, a tool used to visualize work and optimize the flow of the work among the team.  A basic kanban board has a three-step workflow: To Do, In Progress, and Done.  The Kanban methodology relies upon full transparency of work and real-time communication of capacity, therefore the kanban board should be seen as the single source of truth for the team's work.
+The work of all Kanban teams revolves around a Kanban board, a tool used to visualize work and optimize the flow of the work among the team.  A basic kanban board has a three-step workflow:
+
+1. To Do 
+2. In Progress
+3. Done  
+
+The Kanban methodology relies upon full transparency of work and real-time communication of capacity, therefore the kanban board should be seen as the single source of truth for the team's work.
 
 ![kanban board](https://i.imgur.com/4kfEDN2.png)
 
@@ -107,7 +113,7 @@ Or, Github itself actually has its own version of a Kanban board built into ever
 
 ![](https://i.imgur.com/fhSr8uU.png)
 
-## :boom: User Stories
+## User Stories
 
 ### What are they?
 - Key component of the initial planning for an Agile project
@@ -131,7 +137,7 @@ When writing user stories, using this pattern will help you focus on what should
 
 > As a user, I want to be able to collapse the details of a note so that I can more easily focus on the notes I'm interested in.
 
-## :boom: Scrum Poker and Estimating Stories
+## Scrum Poker and Estimating Stories
 
 ![scrum poker](https://i.imgur.com/oeOQp8L.png)
 
@@ -143,14 +149,15 @@ Planning poker is based on a list of features to be delivered, several copies of
 
 - The feature list, often a list of user stories, describes some software that needs to be developed.
 
-- The cards in the deck have numbers on them. A typical deck has cards showing the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) including a zero: 0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89.  Consider the number to represent the hours that it might take to complete the work.
 - Count to three and then hold up your cards  (or use the calculator on your smartphone to display your number to show your number estimation).
+
+- In a deck of "planning poker" cards, the cards in the deck have numbers on them. A typical deck has cards showing the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) including a zero: 0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89.  Consider the number to represent the hours that it might take to complete the work.
 
 By hiding the figures in this way, the group can avoid the cognitive bias of anchoring, where the first number spoken aloud sets a precedent for subsequent estimates.  Doing planning poker will help you figure out how long your overall plan will take, sets time aside to discuss any unforseen problems before coding begins, and also might help you figure out who to assign to which task.
 
 <hr>
 
-## :clock10: Activity
+<!-- ## Activity
 
 You're creating a dating app with a small group!  How do you get started?!
 
@@ -168,7 +175,7 @@ You're creating a dating app with a small group!  How do you get started?!
 
 5. Discuss which card that you'd like to take and work on for your project. Remember - only take **one card**! It's advisable to select cards that won't have you working inside the same file - this way you won't have merge conflicts. *Add yourself* to the card and move it over to the "In Progress" list.  
 
-6. If you have extra time, give Scrum Poker a try with your cards!
+6. If you have extra time, give Scrum Poker a try with your cards! -->
 
 ## Planning Boards
 

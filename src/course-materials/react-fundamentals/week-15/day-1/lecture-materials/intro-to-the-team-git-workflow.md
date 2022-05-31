@@ -38,8 +38,7 @@ To help illustrate collaborating on a project using Git/GitHub, consider the fol
 **Manager**:
 
 1. Create a repo locally, using `$ git init`.
-2. Create a remote version of this repo on GitHub (using `hub create` if
-   you wish).
+2. Create a remote version of this repo on GitHub
 3. Ensure you have a remote named **origin**: `$ git remote -v`
 
 **Programmer**:
