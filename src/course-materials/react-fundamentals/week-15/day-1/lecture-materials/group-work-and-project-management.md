@@ -65,12 +65,15 @@ The Kanban methodology relies upon full transparency of work and real-time commu
 
 ### The Different Types of Project Management 
 
-<details><summary>A comic from toggl</summary>
+<details><summary>Click for a comic from toggl</summary>
 
   ![project management comic](https://i.imgur.com/IMPvTZd.jpg)
 </details>
 
-## :boom: Tracking in Agile Development
+<br>
+<br>
+
+## Tracking in Agile Development
 
 There are few different tools that can be used to plan scrum development.  Real-world projects could have the following lists on their boards organized from left-to-right:
 
