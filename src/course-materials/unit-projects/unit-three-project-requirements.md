@@ -42,7 +42,7 @@ This project requires **planning** organized within a **Trello board** with the 
 
 - **Wireframes**: Sketches of each screens's user interface for the major functionality of the application.
 
-- **Entity-Relationship-Diagram (ERD)**: A diagram of the app's models (one per data entity) and the relationships between them.
+- **Entity-Relationship-Diagram (ERD) (OPTIONAL: if more than one model used)**: A diagram of the app's models (one per data entity) and the relationships between them.
 
 > User stories need to be formed properly using this template:<br>`As a <role>, I want <feature> so that <reason>`. The _reason_ is optional if it's patently obvious.
 
@@ -55,7 +55,7 @@ This project requires **planning** organized within a **Trello board** with the 
 
 The project's source code must be hosted on a personal **GitHub repository**.
 
-The repo is to contain **frequent commits** dated from the beginning of the project through its completion.
+The repo is to contain **frequent commits** from all group members dated from the beginning of the project through its completion.
 
 The project must include a **`README.md`** file with the following sections:
 
@@ -64,8 +64,6 @@ The project must include a **`README.md`** file with the following sections:
 - **Technologies Used**: A list of all technologies, libraries, APIs, etc. used in the project.
 
 - **Getting Started**: Links to the project's planning (Trello board)  and the **deployed app** on Netlify.
-
-- **Unsolved Problems**: List any unsolved issues.
 
 - **Future Enhancements**: Identify future features and enhancements planned for the project.
 
@@ -86,12 +84,14 @@ The project must include a **`README.md`** file with the following sections:
 
 - **Have a well-styled interactive front-end** that communicates with the **Express** backend via AJAX.
 
-- **Include full CRUD (Create, Retrieve, Update & Delete) data operations/actions (having all four are optional)**
+- **Client side routing** to show multiple page-level components with React Router
+
+- **Include full CRUD (Create, Retrieve, Update & Delete) data operations/actions**
 
 - **(OPTIONAL)** you can try to implement one or more of the following:
 	- Consume a third-party API.
 	- Include _admin_ features.
-	- Client side routing to show multiple page-level components with React Router
+	
 	- Authentication, i.e. the ability of a user to log in & log out.
 	- Authorization, by restricting functionality to authenticated users. Also, navigation should respond to the login status of the user.
 
@@ -113,9 +113,7 @@ You will have 5-7 minutes to present and demonstrate the following:
 
 4. Demonstrate your app's main features.
 
-5. Share/discuss the following code (not line-by-line):
-
-	- Your "favorite" React component
+5. Share and discuss the most challenging code (not line-by-line)
 
 6. Share the experience by answering the following:
 
@@ -134,7 +132,7 @@ You will have 5-7 minutes to present and demonstrate the following:
 
 - Feel free to use all resources available and collaborate with others.
 
-- If you do seek assistance in Slack, explain the issue, include screenshots, and explain what you've done to solve the issue on your own.
+- If you do seek assistance in Slack, explain the issue, include **screenshots**, a **repo link**, and explain what you've done to solve the issue on your own.
 
 <br>
 <br>
@@ -145,7 +143,7 @@ You will have 5-7 minutes to present and demonstrate the following:
 
 ## Suggestions to Get Started
 
-- Don’t get too caught up in too many awesome features – simple is better. Favor fewer features that look/feel impressive over numerous clunky/sloppy features.
+- Don’t get too caught up in too many awesome features – simple is better. Favor fewer features that look impressive over numerous clunky/sloppy features.
 
 - Prioritize user stories and code them accordingly.
 
@@ -166,13 +164,11 @@ You will have 5-7 minutes to present and demonstrate the following:
 
 -  **Write DRY code.**
 
-- In a SPA, communication with the backend is via AJAX.  Build **RESTful APIs to CRUD your data entities (resources)** and perform other functionality via AJAX.  In a React app, the best practice for AJAX related logic should be organized in "service" modules, not component modules.
+- In a SPA, communication with the backend is via AJAX.  Build **RESTful APIs to CRUD your data entities (resources)** and perform other functionality via AJAX.
 
 - **Be consistent** with your code style.
 
 - **Clearly name variables and functions** - remember, variables are usually named as **nouns** and functions as **verbs**.
-
-- **Write well-formatted HTML/CSS/JS.** Properly formatting your code makes it more readable. Improperly formatted code infers sloppiness.
 
 - **Comment your code where it makes sense**. Most code is self-documenting, however, comments help explain complicated code.
 
