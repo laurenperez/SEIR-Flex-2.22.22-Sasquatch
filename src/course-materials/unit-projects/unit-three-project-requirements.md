@@ -86,7 +86,7 @@ The project must include a **`README.md`** file with the following sections:
 
 - **Have a well-styled interactive front-end** that communicates with the **Express** backend via AJAX.
 
-- **Include at least two of the four CRUD (Create, Retrieve, Update & Delete) data operations/actions (having all four are optional)**
+- **Include full CRUD (Create, Retrieve, Update & Delete) data operations/actions (having all four are optional)**
 
 - **(OPTIONAL)** you can try to implement one or more of the following:
 	- Consume a third-party API.
