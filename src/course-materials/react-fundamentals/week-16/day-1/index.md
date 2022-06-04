@@ -4,12 +4,13 @@ title: "Week 16 - Day 1"
 week: 16
 day: 1
 type: "homepage"
-topics: "JWT Auth & Project Planning and Approvals"
+topics: "Token-based Auth with React & JWTs + Project Approvals"
 ---
 
 
 # Week 16 - Day 1
 
+### Token-based Auth with React & JWTs
 ### Project 3 Planning & Approvals
 
 - **Lecture: (optional)** Token-based Auth with React & JWTs

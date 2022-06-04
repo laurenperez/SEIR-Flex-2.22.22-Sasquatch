@@ -9,9 +9,7 @@ topics: "Lab Day - Finish Bookmark'd"
 
 # Week 15 - Day 3
 
-### Token-based Auth with React & JWTs
-
-#### Submit Group Lab
+#### Submit Group Lab & Project Planning
 
 - [**Group Lab** - Finish Bookmark'd ](/react-fundamentals/week-15/day-3/labs/bookmarkd-lab) - **Deliverable**
 - **Lunch**
