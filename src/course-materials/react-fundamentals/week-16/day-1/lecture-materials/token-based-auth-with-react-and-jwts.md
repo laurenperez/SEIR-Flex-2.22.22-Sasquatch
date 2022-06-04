@@ -13,12 +13,7 @@ type: "lecture"
 <br>
 <br>
 
-### [Click here](https://generalassembly.zoom.us/rec/share/4k1vEm8AOOaZn3dJRv1IQpkpXjZwzhJyDW1bjAni9y6iFawzk7fMvNbOUZqKrnC9.3MK_5mcpPqzachfC?startTime=1608395918000) to access recording
-<br>
-<br>
-<br>
-
-
+<!-- ### [Click here](https://generalassembly.zoom.us/rec/share/4k1vEm8AOOaZn3dJRv1IQpkpXjZwzhJyDW1bjAni9y6iFawzk7fMvNbOUZqKrnC9.3MK_5mcpPqzachfC?startTime=1608395918000) to access recording -->
 
 
 ## Learning Objectives
@@ -115,8 +110,8 @@ There is a great website dedicated to JWTs that explains in detail their format 
 Allow me to take a JWT from the website and demonstrate the fact that the token can be easily decoded in the browser's console:
 
 ```javascript
-> var jwt = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ';
-> var payload = jwt.split('.')[1]  // only interested in the payload (claims)
+> let jwt = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ';
+> let payload = jwt.split('.')[1]  // only interested in the payload (claims)
 > window.atob(payload)
 < "{"sub":"1234567890","name":"John Doe","admin":true}"
 ```
@@ -183,13 +178,16 @@ The <a href="/downloads/react_fundamentals/token-based-auth-with-react/full-stac
 
 
 ## Set Up
+JWT Auth codealongs can be very lengthy, but we want the main focus to be on the authentication layer we are adding to our server and react app. Therefore, some **enhanced** starter code has been provided. 
 
-- Extract the folder from the `.zip` file.
-- Open the folder `"full-stack-react-mastermind"`
-- The folder contains your backend and frontend app
+<br>
+
+We'll be using a version of the *people app*: 
+- Frontend: [**click here for startercode**](https://git.generalassemb.ly/laurenperez-ga/people-frontend).
+- Backend: [**click here for startercode**](https://git.generalassemb.ly/laurenperez-ga/people-backend).
 - Open both apps in their own VS Code window
-- Install the `node_modules`: `$ npm i`
-- Inside `config/database.js`, an environment variable is referenced for connecting to a cloud-hosted MongoDB; we need to create the `.env` file, and then add the variable that references our own MongoDB Connection URI
+- Install the `node_modules` in both: `$ npm i`
+- Inside `server.js`, an environment variable is referenced for connecting to a cloud-hosted MongoDB; we need to create the `.env` file, and then add the variable that references our own MongoDB Connection URI
 
 <br>
 <br>
@@ -204,23 +202,20 @@ Here are a few of the highlights of the starter code:
 **SERVER CODE**
 
 - The `dotenv` module has been installed and required in **server.js**.
+- Make sure to create a `.env` and add your environment variable for **mongoDB connection string** here.
 
-- We are connecting to a MongoDB using a **config/database.js** module as usual.
+- We've already added a simple `User` model defined in **models/user.js** in the startercode.
 
-- There is a simple `User` model defined in **models/user.js**.
-
-- API Routes for `User` are defined in **routes/api/users.js** (just one for now).
+- We have API Routes for `User`  defined in **server.js** (just one for now).
 
 - There is a **controllers/users.js** module that at this point, only has a `signup` action for creating users when they sign up. 
 
 	Currently, the method returns the JSON of the created user, however, we will soon refactor this to return a JWT.
 
-- There is a `Score` model and a  **controllers/scores.js** module with `create` and `highScores` actions.
+- There is a `People` model and a  **controllers/people.js** module with full **CRUD** actions.
 
-	Later in the lesson, we will make these "protected" routes that require a user to be logged in.
+-	Later in the lesson, we will make these "protected" routes that require a user to be logged in.
 	
-	Note that the `highScores` action returns only 20 high scores by default, however, it's designed to accept a `limit` query parameter to override the default of 20. 
-
 <br>
 <br>
 
@@ -229,29 +224,25 @@ Here are a few of the highlights of the starter code:
 
 - Client-side routes and components have been defined for:
 	- `/signup`: Shows the `<SignupPage>` component.
-	- `/login`: Shows a `<LoginPage>` component that's nearly identical to the one we built to practice with.
-	- `/high-scores`: Shows the `<HighScoresPage>` component. Again, later in this lesson we will learn how how to make this a "protected" route that allows only authenticated users to access it.
+	- `/login`: Shows a `<LoginPage>` component.
 
-- A `<NavBar>` component has been created and added that currently has `<Link>`s to the `/signup` and `/login` routes. It's only rendered in `<GamePage>`.
+- The `<Header>` component has been altered so that it currently has `<Link>`'s to the `/signup` and `/login` routes. It's only rendered in `App`.
 
 
 - `<SignupPage>` displays a `<SignupForm>` that is working, we can use this as a slightly more advanced solution/reference for creating forms!
 
-	Submitting the form adds a user to the database, via the `signup` function from the `userService`.
+	Submitting the form adds a user to the database, via the `signup` function from the `signup` **service** in the **services** folder.
 	
-	Note how the `Sign Up` button is disabled using a custom `isFormInvalid` helper function.
+	Note how the `Sign Up` button is disabled using a custom `validForm()` helper function.
 	
-	After a user signs up, we want to switch to the root route, thus inside of `handleSignup` we are **programmatically** changing the route using `props.history.push('/')`. Where did the `history` prop come from? Well, each `<Route>` component is passing it's props to our page components, which includes the `history` object; we can verify this using the Chrome React Dev Tools.
+- After a user signs up, we want to redirect to the root route.
 
-- `<App>` is using another call to `useState` to initialize `scores` to be an empty array.
 
-	Upon mounting, `<App>` makes an AJAX call with `useEffect` to fetch the scores.
+- Upon mounting, `<Main>` makes an AJAX call with `useEffect` to fetch all people.
 
-	Although the scores are going to be returned by the server almost instantly, we're still initializing `scores` to be an empty array - **always do this**.
+- Although people data is going to be returned by the server almost instantly, we're still initializing `people` to be an empty array - **always do this**.
 
-- There is a **services/userService.js** "service" module that provides user related functionality. It can be imported by any component that needs to perform anything user related, including signing up, logging in and logging out.
-
-	Currently, it has a working `signup` function.
+- Currently, it has a working `signup` function.
 
 <br>
 <br>
@@ -411,20 +402,20 @@ function createJWT(user) {
 Now let's refactor the `signup` action to return a JWT:
 
 ```javascript
-async function signup(req, res) {
-  const user = new User(req.body);
+const signup = async (req, res) => {
   try {
-    await user.save();
+    let user = await User.create(req.body);
     const token = createJWT(user);
+    // Send back a JWT
     res.json({ token });
-  } catch (err) {
+  } catch (error) {
     // Probably a duplicate email
-    res.status(400).json(err);
+    res.status(400).json(error);
   }
-}
+};
 ```
 
-The `signup` action is transporting the token string to the client within an object (assigned to a key named `token`). Keep this in mind because we'll need to refactor **userService.js** on the client to extract only the token string.
+The `signup` action is transporting the token string to the client within an object (assigned to a key named `token`). Keep this in mind because we'll need to refactor **signup.js** on the client to extract only the token string.
 
 Open up the Network tab in Chrome's DevTools, clear the requests, and then sign up another user to verify that a token is being returned.
 
@@ -444,13 +435,13 @@ As discussed, token-based authentication requires the client to send the token w
 
 Keeping the token string stored in `localStorage` allows users to remain logged in until the token expires. We will be logged in, even if we close the browser and come back tomorrow! However, you get to determine how long the token is good for when you generate it on the server.
 
-We'll keep all token related code in it's own utility module, but first, let's do that quick refactor to **userService.js** I mentioned a bit ago...
+We'll keep all token related code in it's own utility module, but first, let's do that quick refactor to **signup.js** I mentioned a bit ago...
 
 <br>
 <br>
 
 
-#### Refactor the `signup` function in **userService.js**
+#### Refactor the `signup` function in **signup.js**
 
 Again, we only want to store the token **string** in `localStorage`, however, the token string is received by the client within an object.
 
@@ -482,7 +473,7 @@ This funky syntax, `.then(({token}) => ...`, is object parameter destructuring! 
 
 #### Creating the `tokenService` utility module
 
-Just like with the `userService` module, we're going to follow the single-responsibility principle by putting token related functions in a module for:
+Just like with the `signup` module, we're going to follow the single-responsibility principle by putting token related functions in a module for:
 
 - Storing, retrieving and removing tokens from `localStorage`
 - Verifying that a token has not expired and removing it from storage if it has.
@@ -516,12 +507,12 @@ We'll add other functions in a bit, but for now, this is all we need to persist 
 
 #### Persisting the token to `localStorage`
 
-Now let's refactor the `signup` function in **userService.js** to use the `setToken` function we just created.
+Now let's refactor the `signup` function in **signup.js** to use the `setToken` function we just created.
 
 First, we need to import **tokenService.js**:
 
 ```javascript
-// services/userService.js
+// services/signup.js
 
 import { setToken } from './tokenService';
 
@@ -554,7 +545,7 @@ Now sign up another user and go to **`localStorage`** within the **Application**
 
 ### Step 4: Update the `<App>` component's state to hold the authenticated user's info
 
-We will want to keep a `user` object in the `<App>` component's `state` so that it can be passed via props to components that need to be aware of the logged in user, such as `<NavBar>`.
+We will want to keep a `user` object in the `<App>` component's `state` so that it can be passed via props to components that need to be aware of the logged in user, such as `<Header>`.
 
 If there is no user logged in, we will set the `user` property on the `state` object to `null`.
 
@@ -562,18 +553,18 @@ If there is no user logged in, we will set the `user` property on the `state` ob
 <br>
 
 
-#### Add a `getUser` function to the `userService`
+#### Add a `getUser` function to the `signup`
 
 Anytime the app is loaded or refreshed, we're going to want to check to see if there's a valid token in `localStorage` and "log in" that user automatically.
 
-In addition, apps from time-to-time, will need to obtain the logged in user's info or check if there is a user logged in. A function for this purpose in `userService` would make sense.
+In addition, apps from time-to-time, will need to obtain the logged in user's info or check if there is a user logged in. A function for this purpose in `signup` would make sense.
 
-Let's add a `getUser` function to **userService.js**, but first we need to import something that doesn't exist, a `getUserFromToken` function... 
+Let's add a `getUser` function to **signup.js**, but first we need to import something that doesn't exist, a `getUserFromToken` function... 
 
 ... you'll probably see an error if you save your file at this point ... don't worry, we'll create it soon:
 
 ```javascript
-// inside of src/services/userService.js
+// inside of src/services/signup.js
 
 // first update your named import statement
 import { setToken, getUserFromToken } from './tokenService';
@@ -627,7 +618,7 @@ function getToken() {
 Next, let's code the `getUserFromToken` function that decodes the token, then extracts and returns the `user` object:
 
 ```javascript
-// inside of userService.js
+// inside of signup.js
 
 // other code above ... 
 
@@ -653,10 +644,10 @@ Be sure to update the `export` as shown above as well.
 
 Time to add a `user` property to `<App>`'s state.
 
-First, import the `userService` in **App.js**:
+First, import the `signup` in **App.js**:
 
 ```javascript
-import { getUser } from './services/userService';
+import { getUser } from './services/signup';
 ```
 
 Since adding a `user` to state from a token in localStorage is not an asynchronous process, we'll set up another `useState` hook to store the logged-in user:
@@ -672,57 +663,48 @@ The last user we signed up should now be in the state of `<App>`. Use the React 
 <br>
 
 
-### Step 5: Refactor the `<NavBar>`'s display based on auth status
+### Step 5: Refactor the `<Header>`'s display based on auth status
 
 Just like in the other two authentication lessons, we want the navigation links to render according to whether there is a user logged in or not:
 
 - **Logged in:** Display a greeting and a **Log Out** link.
 - **Not logged in:** Display **Log In** and **Sign Up** links like we are currently doing.
 
-Now that we've added a `user` to `<App>`'s `state`, we need to pass it on down to the `<NavBar>` component as a prop.
+Now that we've added a `user` to `<App>`'s `state`, we need to pass it on down to the `<Header>` component as a prop.
 
 **I bet you can do it in 5 minutes or less!**
 
-Now that `<NavBar>` has a `user` prop, let's refactor **NavBar.js**.
+Now that `<Header>` has a `user` prop, let's refactor **Header.js**.
 
 We want to display one of two choices - another opportunity to use a ternary operator as follows:
 
 ```javascript
-const NavBar = (props) => {
-  let nav = props.user ?
-    <div>
-      <Link to='/high-scores' className='NavBar-link'>HIGH SCORES</Link>
-      &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <Link to='' className='NavBar-link'>LOG OUT</Link>
-      &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <span className='NavBar-welcome'>WELCOME, {props.user.name}</span>
-    </div>
-    :
-    <div>
-      <Link to='/login' className='NavBar-link'>LOG IN</Link>
-      &nbsp;&nbsp;|&nbsp;&nbsp;
-      <Link to='/signup' className='NavBar-link'>SIGN UP</Link>
-    </div>;
+// const NavBar = (props) => {
+//   let nav = props.user ?
+//     <div>
+//       <Link to='/high-scores' className='NavBar-link'>HIGH SCORES</Link>
+//       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+//       <Link to='' className='NavBar-link'>LOG OUT</Link>
+//       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+//       <span className='NavBar-welcome'>WELCOME, {props.user.name}</span>
+//     </div>
+//     :
+//     <div>
+//       <Link to='/login' className='NavBar-link'>LOG IN</Link>
+//       &nbsp;&nbsp;|&nbsp;&nbsp;
+//       <Link to='/signup' className='NavBar-link'>SIGN UP</Link>
+//     </div>;
 
-  return (
-    <div className='NavBar'>
-      {nav}
-    </div>
-  );
-};
+//   return (
+//     <div className='NavBar'>
+//       {nav}
+//     </div>
+//   );
+// };
 ```
 
 In case you're wondering, "yes", we could have inlined the entire ternary expression within the `return` statement instead of assigning it to the variable `nav`.
 
-A tiny class added to **NavBar.css** for the welcome text:
-
-```css
-.NavBar-welcome {
-  color: grey;
-}
-```
-
-<img src="https://i.imgur.com/sih4Awf.png">
 
 Awesome!
 
@@ -749,7 +731,7 @@ First let's add an `onClick` prop to the link:
 
 ```javascript
 function handleLogout (){
-  logout(); // 👈 We'll define this inside of userService shortly
+  logout(); // 👈 We'll define this inside of signup shortly
   setUserState({ user: null });
 }
 ```
@@ -757,12 +739,12 @@ function handleLogout (){
 **Don't forget to add `logout` to your named import**
 
 ```javascript
-import { getUser, logout } from './services/userService';
+import { getUser, logout } from './services/signup';
 ```
 
 **As usual, pass that function down to where it's needed (NavBar.js) - you got this.**
 
-Now let's add the `logout` function to **userService.js**:
+Now let's add the `logout` function to **signup.js**:
 
 ```javascript
 function logout() {
@@ -782,10 +764,10 @@ export {
 
 **As you probably noticed, we're working in reverse order! 🤪 ... Welcome to software development! 🎉**
 
-We're using a `removeToken` function inside `logout`. **NOTE:** we still haven't defined this function inside our token service, but let's import that at the top of `userService`:
+We're using a `removeToken` function inside `logout`. **NOTE:** we still haven't defined this function inside our token service, but let's import that at the top of `signup`:
 
 ```javascript
-// inside of src/services/userService
+// inside of src/services/signup
 
 // update your named import statement
 import { setToken, getUserFromToken, removeToken } from './tokenService';
@@ -884,10 +866,10 @@ Since logging in is almost the same as signing up, let's **copy** the `handleSub
 
 Now a few of tweaks:
 
-1. Since we'll need to define a `login` function in `userService`, let's import it ... again, this doesn't exist yet:
+1. Since we'll need to define a `login` function in `signup`, let's import it ... again, this doesn't exist yet:
 	
 	```javascript
-	import { login } from '../../services/userService';
+	import { login } from '../../services/signup';
 	```
 
 2. Let's update the code to invoke a `login` function (which we will write in a bit) and also tweak the error handling to something like this:
@@ -940,7 +922,7 @@ Please complete the following three steps:
 3. Pass `handleSignupOrLogin` from `<App>` to `<LoginPage>`.
 
 
-Awesome, the next step in implementing log in functionality is to add the `login` function to **userService.js**:
+Awesome, the next step in implementing log in functionality is to add the `login` function to **signup.js**:
 
 ```javascript
 function login(creds) {
@@ -1348,10 +1330,10 @@ After what you just went through? No way!
 
 
 
-## Lab
+<!-- ## Lab -->
 
-It is a requirement to implement token-based auth in your upcoming project.
+<!-- It is a requirement to implement token-based auth in your upcoming project. -->
+
+**Tips For using Auth in Project 3 (optional)**
 
 The time to implement auth will come very early during your project's development - in fact, you will need to implement authentication before any of the app's functionality (other than the landing page functionality).
-
-That's when you will get practice on what was covered in this lesson.
