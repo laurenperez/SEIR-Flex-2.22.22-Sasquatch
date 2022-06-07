@@ -164,17 +164,13 @@ When making an HTTP request, a token can be sent in an HTTP header (or even the 
 
 <br>
 <br>
-<br>
 
-
-## Review the Starter Code
+<!-- ## Review the Starter Code
 
 The <a href="/downloads/react_fundamentals/token-based-auth-with-react/full-stack-react-mastermind.zip" download>**Starter Code**</a> is the full-stack Mastermind app with some minor additions to aid our authentication implementation.
 
-
-
 <br>
-<br>
+<br> -->
 
 
 ## Set Up
