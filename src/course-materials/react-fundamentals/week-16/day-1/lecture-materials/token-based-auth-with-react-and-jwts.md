@@ -54,13 +54,13 @@ type: "lecture"
 2. Refactor the server to provide a JWT when a user signs up.
 3. Persist the token (JWT) on the client.
 4. Update the `<App>` component's state to hold the authenticated user's info.
-5. Refactor the `<NavBar>`'s display based on auth status.
+5. Refactor the `<Header>`'s display based on auth status.
 6. Implement Log Out functionality.
 7. Update the `user` in `<App>`'s state when signing up.
 8. Implement Log In functionality.
 9. Provide the token when making AJAX requests.
 10. Verify JWTs sent by the client and add the `user` to the Express `request` object.
-11. Implement authorization: Protect the `/high-scores` client-side route.
+11. Implement authorization: Protect the `/people` client-side route.
 12. Implement authorization: Protect server-side routes with custom middleware.
 
 
@@ -676,34 +676,33 @@ Now that we've added a `user` to `<App>`'s `state`, we need to pass it on down t
 
 Now that `<Header>` has a `user` prop, let's refactor **Header.js**.
 
-We want to display one of two choices - another opportunity to use a ternary operator as follows:
+We want to display one of two choices -
 
 ```javascript
-// const NavBar = (props) => {
-//   let nav = props.user ?
-//     <div>
-//       <Link to='/high-scores' className='NavBar-link'>HIGH SCORES</Link>
-//       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-//       <Link to='' className='NavBar-link'>LOG OUT</Link>
-//       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-//       <span className='NavBar-welcome'>WELCOME, {props.user.name}</span>
-//     </div>
-//     :
-//     <div>
-//       <Link to='/login' className='NavBar-link'>LOG IN</Link>
-//       &nbsp;&nbsp;|&nbsp;&nbsp;
-//       <Link to='/signup' className='NavBar-link'>SIGN UP</Link>
-//     </div>;
+function Header({ user }) {
+  if (!user) {
+    return (
+      <nav className="nav">
+        <Link to="/">Home</Link>
+        <Link to="/signup">Sign Up</Link>
+        <Link to="/login">Log In</Link>
+      </nav>
+    )
+  } else {
+    return (
+      <nav className="nav">
+        <h1>Welcome {user.name},</h1>
+        <Link to="/">Home</Link>
+        <Link to="">LOG OUT</Link>
+      </nav>
+    )
+  }
+}
 
-//   return (
-//     <div className='NavBar'>
-//       {nav}
-//     </div>
-//   );
-// };
+export default Header;
 ```
 
-In case you're wondering, "yes", we could have inlined the entire ternary expression within the `return` statement instead of assigning it to the variable `nav`.
+In case you're wondering, yes, we could also inline the entire ternary expression within the `return` statement. Give it a try. 
 
 
 Awesome!
@@ -714,7 +713,7 @@ Awesome!
 
 ### Step 6: Implement Log Out functionality
 
-We just added a `<Link to='' className='NavBar-link'>LOG OUT</Link>` for logging out. Let's put it to work.
+Lets add a `<Link to='' className='Header-link'>LOG OUT</Link>` for logging out.
 
 When the **LOG OUT** link is clicked, we don't want to change routes, instead we want to:
 
@@ -724,7 +723,7 @@ When the **LOG OUT** link is clicked, we don't want to change routes, instead we
 First let's add an `onClick` prop to the link:
 
 ```javascript
-<Link to='' className='NavBar-link' onClick={props.handleLogout}>LOG OUT</Link>
+<Link to='' onClick={handleLogout}>LOG OUT</Link>
 ```
 
 **Write the below helper function in App.js**
@@ -742,7 +741,7 @@ function handleLogout (){
 import { getUser, logout } from './services/signup';
 ```
 
-**As usual, pass that function down to where it's needed (NavBar.js) - you got this.**
+**As usual, pass that function down to where it's needed (Header.js) - you got this.**
 
 Now let's add the `logout` function to **signup.js**:
 
@@ -810,7 +809,7 @@ Let's take care of this by first adding a `handleSignup` helper in **App.js**:
       setUserState({user: getUser()});
     }
 ```
-We need to pass it from `<App>` down to `<SignupForm>` via props - **easy peasy because all props are already being passed from the `<SignupPage>` to `<SignupForm>` using the spread operator**. Just pass it to `<SignupPage>` and it does the rest.
+We need to pass it from `<App>` down to `<SignupForm>` via props - **easy peasy because all props are already being passed from the `<SignupPage>` to `<SignupForm>` using the spread operator**. Just pass it to `<Main>` and then `<SignupPage>` and it does the rest.
 
 Here's the refactor that adds the call to `<App>`'s `handleSignup` in **SignupForm.js**:
 
@@ -820,14 +819,14 @@ Here's the refactor that adds the call to `<App>`'s `handleSignup` in **SignupFo
     try {
       await signup(formState);
       // Let <App> know a user has signed up!
-      props.handleSignup();
+      handleSignup();
 ```
 
 That should do the trick! Feel free to sign up and log out all you want!
 
 What's that? You're tired of signing up different users?
 
-We're here to please...
+On to the next step!
 
 <br>
 <br>
@@ -847,7 +846,6 @@ To implement logging in, we need to write code on both the client and server...
 
 We already have a `<LoginPage>` component.
 
-<img src="https://i.imgur.com/wyS2TzB.png">
 
 We're using controlled `<input>`s here, however, the `handleChange` function in the `onChange` is not yet implemented - here's the finished product:
 
@@ -860,7 +858,7 @@ We're using controlled `<input>`s here, however, the `handleChange` function in 
   }
 ```
 
-The above code is sweet like bear meat because this single function can handled updating the state for any number of `<input>`s! This is more elegant than writing dedicated functions for each `<input>`.
+The above code is awesome because this single function can handled updating the state for any number of `<input>`s! This is more elegant than writing dedicated functions for each `<input>`.
 
 Since logging in is almost the same as signing up, let's **copy** the `handleSubmit` function from `<SignupForm>` and **replace** the one that's currently in `<LoginPage>`.
 
@@ -875,21 +873,21 @@ Now a few of tweaks:
 2. Let's update the code to invoke a `login` function (which we will write in a bit) and also tweak the error handling to something like this:
 
 
-	```javascript
-  async function handleSubmit (e) {
-    e.preventDefault();
-    try {
-	    // Update to call login instead of signup
-	    await login(formState);
-	    
-	    ...
-	  
-	  } catch (err) {
-	    // Use a modal or toast in your apps instead of alert
-	    alert('Invalid Credentials!');
-	  }
-	}
-	```
+```javascript
+async function handleSubmit (e) {
+  e.preventDefault();
+  try {
+    // Update to call login instead of signup
+    await login(formState);
+    
+    // ...rest of function
+  
+  } catch (err) {
+    // Use a modal or toast in your apps instead of alert
+    alert('Invalid Credentials!');
+  }
+}
+```
 
 3. We originally named the function that notifies `<App>` when someone signs up `handleSignup`. However, to stay DRY, we're now going to use the same function to notify `<App>` when someone logs in. Let's change the name of the function to something more appropriate:
 
@@ -899,10 +897,10 @@ Now a few of tweaks:
     try {
       await login(formState);
 	    // Rename the function below
-      props.handleSignupOrLogin();
+      handleSignupOrLogin();
       
       // redirect back to homepage
-      props.history.push('/');
+      // TO DO - Navigate back home
     } catch (err) {
 	    alert('Invalid Credentials!');
     }
@@ -921,12 +919,15 @@ Please complete the following three steps:
 
 3. Pass `handleSignupOrLogin` from `<App>` to `<LoginPage>`.
 
+---
+
+<br>
 
 Awesome, the next step in implementing log in functionality is to add the `login` function to **signup.js**:
 
 ```javascript
 function login(creds) {
-  return fetch(BASE_URL + 'login', {
+  return fetch(`${BASE_URL}/users/login`, {
     method: 'POST',
     headers: new Headers({'Content-Type': 'application/json'}),
     body: JSON.stringify(creds)
@@ -961,33 +962,33 @@ Whew, that should take care of the client, on to the server...
 
 When adding functionality on the server, a great place to start is defining the route.
 
-In **routes/api/users.js**:
+In **routes/users.js**:
 
 ```javascript
 // routes/users.js
-router.post('/signup', usersCtrl.signup);
-router.post('/login', usersCtrl.login);
+router.post('/signup', usersController.signup);
+router.post('/login', usersController.login);
 ```
 
-Now we need that `usersCtrl.login` action - in **controllers/users.js**:
+Now we need that `usersController.login` action - in **controllers/users.js**:
 
 ```javascript
-async function login(req, res) {
+const login = async (req, res) => {
   try {
-    const user = await User.findOne({email: req.body.email});
-    if (!user) return res.status(401).json({err: 'bad credentials'});
+    const user = await User.findOne({ email: req.body.email });
+    if (!user) return res.status(401).json({ err: "bad credentials" });
     user.comparePassword(req.body.password, (err, isMatch) => {
       if (isMatch) {
         const token = createJWT(user);
-        res.json({token});
+        res.json({ token });
       } else {
-        return res.status(401).json({err: 'bad credentials'});
+        return res.status(401).json({ err: "bad credentials" });
       }
     });
   } catch (err) {
     return res.status(401).json(err);
   }
-}
+};
 
 ```
 
@@ -1035,46 +1036,39 @@ Okay, now that we've implemented logging in on the client and server, try it out
 The server is going to want to verify that a user has a token and that it's valid before allowing access to protected routes.
 
 If we are logged in, we want to ensure that we send our JWT in a header.
-
-There exists a `POST /api/scores` route on the server used to create a high score. Later in the the lesson, we will protect this route by requiring a valid JWT.
-
-
-<br>
 <br>
 
-
-#### Refactor the **scoresService.js** service module
+#### Refactor the **Main.js** service module
 
 As just mentioned, we need to send the JWT along with each HTTP request made to any protected route on the server.
 
-Let's refactor **scoresService.js** to provide the JWT when its `addScoreData` function is called.
+Let's refactor **Main.js** to provide the JWT when its `createPeople` function is called.
 
 First we need to import the `getToken` function from **tokenService.js**, so we can obtain the token:
 
 ```javascript
-// Add this import at the top of scoresService.js
+// Add this import at the top of Main.js
 import { getToken } from './tokenService';
 
-const BASE_URL = 'http://localhost:3001/api/scores';
+const BASE_URL = 'http://localhost:3001/people';
 
 ```
 
 Here's the refactor that adds simply adds a header:
 
 ```javascript
-function addScoreData(score) {
-  
-    ...
-    
-    headers: {
-      'Content-type': 'application/json',
-      // Add this header - don't forget the space after Bearer
-      'Authorization': 'Bearer ' + getToken()
-    },
-    
-    ...
-
-}
+const createPeople = async (person) => {
+    await fetch(peopleAPI, {
+      method: "POST",
+      headers: {
+        "Content-Type": "Application/json",
+        // Add this header - don't forget the space after Bearer
+        Authorization: "Bearer " + getToken(),
+      },
+      body: JSON.stringify(person),
+    });
+    getPeople();
+  };
 ```
 
 As you can see, we added an additional header named [Authorization](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) which has been specified by the HTTP specification as the header to use for providing credentials.
@@ -1083,22 +1077,24 @@ Note the pre-pending of the word **Bearer** to the token, followed by a space, t
 
 To verify that the token is being sent in the headers properly:
 
-- Use React Developer Tools to enter the correct guess - **but don't click the score button yet**.
-- Open the **Network** tab in Chrome DevTools.
-- Now click the score button.
+- Use Chrome dev tools to inspect the request in the Network tab
 
-Inspecting the Request Headers should make you feel warm & fuzzy:
 
-<img src="https://i.imgur.com/YHgLc1s.png">
+--- 
+**YOU DO EXERCISE (5 mins)**
 
+Please complete the following steps:
+
+1. Add the same Athentication header for the other crud routes in `<Main>`
+2. Verify in Chrome dev tools that the `Bearer <token>` appears in the request Headers for each one
+---
 <br>
 <br>
-
 
 ## Step 10: Verify JWTs sent by the client and add the `user` to the Express `request` object
 
 
-We're sending the JWT in an `Authorization` header when requesting scores. 
+We're sending the JWT in an `Authorization` header when creating people. 
 
 The token already contains the user's info we can attach to the `req` object - we won't have to hit the database! No session, no querying the database - that's scalability!
 
@@ -1171,136 +1167,87 @@ As we've seen before, the order that middleware is mounted matters.
 
 For efficiency's sake, we don't want to bother checking for a token, verifying it, and adding the user payload to the Express request object unless we need to!
 
-If all the routes in **routes/api/scores.js** needed to be protected, we could add the middleware in **server.js** like this:
+If all the routes in **routes/people.js** needed to be protected, we should add the middleware in **server.js** like this:
 
 ```javascript
-app.use('/api/users', require('./routes/api/users'));
+app.use("/users", usersRouter);
 // Mount our custom auth middleware to protect routes below it
-app.use(require('./config/auth'));
-app.use('/api/scores', require('./routes/api/scores'));
+app.use(require("./config/auth"));
+app.use("/people", peopleRouter);
 ```
 
-The above code would skip checking for a token when handling any of the **user** related routes (signing up or logging in/out).
-
-However, in this app, we just want to check for a token in the `create` high score action.
-
-Accordingly, we will need to use the middleware within **routes/api/scores.js** router module like this:
-
-```javascript
-const express = require('express');
-const router = express.Router();
-const scoresCtrl = require('../../controllers/scores');
-
-router.get('/', scoresCtrl.highScores);
-
-/*---------- Protected Routes ----------*/
-// Process the token for only the routes below
-router.use(require('../../config/auth'));
-router.post('/', scoresCtrl.create);
-
-module.exports = router;
-```
+The above code will skip checking for a token when handling any of the **user** related routes (signing up or logging in/out).
 
 Just be sure to mount your auth middleware before mounting any routes/routers that need access to `req.user`.
 
-To test, first let's log out `req.user` from the `highScores` action in **controllers/scores.js**:
-
-```javascript
-function highScores(req, res) {
-  console.log(req.user);
-  
-  // existing code below
-  const scores = await Score.find({})
-  ... 
-```
-
-As expected, you will see `undefined` logged out in the server terminal because that route is above the auth middleware.
-
-Before checking the `create` action, let me delete the high scores from the database...
-
-Okay, move the `console.log` to the `create` function.
-
-Make sure you're logged in, then...
-
-Cheat again to add a high score - and terminal will display the user data from the token!
-
 
 <br>
 <br>
 
-## Step 11: Protect the `/high-scores` client-side route
+## Step 11: Protect the `/people` index client-side route
 
 In the client, it's usually a good idea to "hide" functionality that users should not be able to access.
 
 **In the previous units, how have we been "hiding" functionality from anonymous visitors?**
 
-Let's say that we don't want anonymous users to be able to view high-scores in react-mastermind.
+Let's say that we don't want anonymous users to be able to view all people in the database.
 
-
+We could just use if statements to not show certain links. OR...
 <br>
-<br>
 
 
-#### We're Talking About React Here...
 
-The `<Link>` for accessing high-scores is being rendered in `<GamePage>` regardless of log in status.
+#### Use Protected Rotes
 
-A minor tweak, and poof, no more **[High Scores]** unless the user is logged in:
+Its easy to protect links in React, but what if we want to protect entire Routes?
+
+
+One solution is to nest our protected Routes inide of a parent component that serves as a gatekeeper. We call these Protected Routes.
 
 ```javascript
-{ props.user && <Link className='btn btn-default' style={{ marginBottom: 10 }} to='/high-scores'>High Scores</Link>}
+const ProtectedRoute = ({ user, children }) => {
+  if (!user) {
+    return <Navigate to="/login" replace />;
+  }
+
+  return children;
+};
 ```
 
-<img src="https://i.imgur.com/zn3dYEk.png">
+In this case, if there is no user logged in the protected route component will simply redirect them to the login page. This prevents someone from typing the route into the browser and potentially bypassing a hidden link. 
 
+If there is a user logged in the protected component will simply render its child, i.e. the protected route. 
 
-<br>
-<br>
-
-
-#### What About the Rebels?
-
-Just because the **[High Scores]** "button" is no displayed doesn't mean that a user can't type `http://localhost:3000/high-scores` into the address bar - and if they do, it currently triggers an error.
-
-Instead, we should send that rebel to `/login`!
-
-One best practice approach is to define your protected routes as follows in **App.js**:
+In `Main`: 
 
 ```jsx
-<Route exact path="/high-scores" render={props =>
-  getUser() ? 
-  <HighScoresPage {...props} scores={scores} />
-  : <Redirect to="/login" />
-}/>
+<Route
+  path="/"
+  element={
+    <ProtectedRoute user={props.user}>
+      <Index people={people} createPeople={createPeople} />
+    </ProtectedRoute>
+  }
+/>
+
 ```
-
-Note the use of another `react-router-dom` component, `<Redirect>`. This component is great for performing client-side redirects.
-
-Be sure to update the import to include `Redirect`:
-
-```javascript
-import { Route, Switch, Redirect } from 'react-router-dom';
-```
-
-The final step, coming up!
 
 <br>
 <br>
 
 
-## Step 12: Protect server-side routes with custom middleware
+## Step 12 (optional): Protect any additional server-side routes with custom middleware
 
-We'll use a tiny middleware function inserted before the controller action that will check if `req.user` is present.
+You can use a tiny middleware function inserted before the controller action that will check if `req.user` is present.
 
-Here's the updated **routes/api/scores.js**:
-
+Example: 
 ```javascript
 ...
 
 /*---------- Protected Routes ----------*/
 // Process the token for only the routes below
 router.use(require('../../config/auth'));
-router.post('/', checkAuth, scoresCtrl.create);
+router.post('/', checkAuth, otherModel.create);
 
 /*----- Helper Functions -----*/
 function checkAuth(req, res, next) {
@@ -1310,29 +1257,16 @@ function checkAuth(req, res, next) {
 ```
 
 <br>
-<br>
-<br>
-
 
 ## We did it! 🥳 🎉
 <br>
-<br>
-<br>
-
-
 
 ## Essential Questions
 
 After what you just went through? No way!
 
 <br>
-<br>
 
-
-
-<!-- ## Lab -->
-
-<!-- It is a requirement to implement token-based auth in your upcoming project. -->
 
 **Tips For using Auth in Project 3 (optional)**
 
