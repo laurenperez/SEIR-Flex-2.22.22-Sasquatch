@@ -4,7 +4,7 @@ title: "Week 16 - Day 1"
 week: 16
 day: 1
 type: "homepage"
-topics: "Token-based Auth with React & JWTs + Project Approvals"
+topics: "Project 3 + Token-based Auth with JWTs"
 ---
 
 
