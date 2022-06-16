@@ -94,9 +94,9 @@ Here you'll find
 <br>
 <br>
 
-<!-- ### [Unit Four: Second Language](/second-language) -->
+### [Unit Four: Second Language](/second-language)
 
-### 🔒 Unit Four: Second Language - **Locked**
+<!-- ### 🔒 Unit Four: Second Language - **Locked** -->
 
 | Week | Topics                                                                              |
 | ---- | ----------------------------------------------------------------------------------- |
