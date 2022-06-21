@@ -11,10 +11,10 @@ topics: "Python Containers: lists, tuples & dictionaries & Python Functions"
 
 
 #### Intro to Python Containers: lists, tuples & dictionaries
-- [**Lecture:** Intro to Python containers](/second-language/week-18/day-2/lecture-materials/intro-to-python-containers/)
-- [**Lab:** Python containers Lab](/second-language/week-18/day-2/labs/python-containers-lab/) - **Deliverable**
+- [**Lecture:** Intro to Python containers](/second-language/week-18/day-3/lecture-materials/intro-to-python-containers/)
+- [**Lab:** Python containers Lab](/second-language/week-18/day-3/labs/python-containers-lab/) - **Deliverable**
 
 ##### Lunch
 #### Intro to Python Functions
-- [**Lecture:** Intro to Python Functions](/second-language/week-19/day-3/lecture-materials/intro-to-python-functions/)
-- [**Lab:** Python Functions Lab](/second-language/week-19/day-3/labs/python-functions-lab/) - **Deliverable**
+- [**Lecture:** Intro to Python Functions](/second-language/week-18/day-3/lecture-materials/intro-to-python-functions/)
+- [**Lab:** Python Functions Lab](/second-language/week-18/day-3/labs/python-functions-lab/) - **Deliverable**
