@@ -106,7 +106,7 @@ Here you'll find
 | 21   | Django Model Relationships, Upload Photos with Amazon S3, Django Auth               |
 | 22   | Project 4 Week                                                                      |
 | 23   | Project 4 Week Presentations & Start CS Week                                        |
-| 24   | CS Week - Data Structures, Algorythms, Searches  &  Start Capstone Project          |
+| 24   | CS Week - Data Structures, Algorithms, Searches  &  Start Capstone Project          |
 | 25   | Capstone Project Week                                                               |
 | 26   | Capstone Project Presentations & Graduation 🎉                                      |
 
