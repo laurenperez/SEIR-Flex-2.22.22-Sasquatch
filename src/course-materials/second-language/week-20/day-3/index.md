@@ -13,18 +13,17 @@ topics: "Django Models & Class Based Views (CBV's)"
 
 - [**Lecture:** Intro to Django Models](/second-language/week-20/day-3/lecture-materials/intro-to-django-models/)
 - **Lab:**
-<br>
-_For practice, do everything we did in this lesson on your Finch Collector project!_
-_Don't forget to make commits._
+  _For practice, do everything we did in this lesson on your Finch Collector project!_
+  _Don't forget to make commits._
+  <br>
+
+#### Lunch
+
 <br>
 
-##### Lunch
-
-<br>
 #### Class Based Views (CBV's)
 
 - [**Lecture:** Intro to Class Based Views (CBV's)](/second-language/week-20/day-3/lecture-materials/intro-to-class-based-views/)
 - **Lab:**
-<br>
-_For practice, do everything we did in this lesson on your Finch Collector project!_
-_Don't forget to make commits._
+  _For practice, do everything we did in this lesson on your Finch Collector project!_
+  _Don't forget to make commits._
