@@ -4,7 +4,7 @@ title: "Week 20 - Day 3"
 week: 20
 day: 3
 type: "homepage"
-topics: "Class Based Views (CBV's) & Django Models"
+topics: "Django Models & Class Based Views (CBV's)"
 ---
 
 # Week 20 - Day 3
