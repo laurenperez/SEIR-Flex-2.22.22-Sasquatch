@@ -14,7 +14,9 @@ topics: "Image Upload to Amazon S3 & Django Authentication"
 
 - [**Lecture:** Uploading Images to Amazon S3 with Django](/second-language/week-21/day-3/lecture-materials/uploading-images-to-amazon-s3/)
 <br>
+
 ##### Lunch
+
 <br>
 
 #### Intro to Django Authentication & Authroization
