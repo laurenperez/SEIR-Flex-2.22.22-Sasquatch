@@ -40,7 +40,7 @@ Here you'll find
 | 1    | Project 1 - [Frontend Fundamentals: Your First Web Application](/unit-projects/unit-one-project-requirements/)           |
 | 2    | Project 2 - [Backend Fundamentals: Your First Full Stack Application](/unit-projects/unit-two-project-requirements)     |
 | 3    | Project 3 - [React: A MERN Stack Application](/unit-projects/unit-three-project-requirements) - Group Project  |
-| 4    | Project 4 - Python: Build a Full-stack Django App          |
+| 4    | Project 4 - [Python: Build a Full-stack Django App](/unit-projects/unit-four-project-requirements-1) - Individual or Group        |
 
 <br>
 <br>
