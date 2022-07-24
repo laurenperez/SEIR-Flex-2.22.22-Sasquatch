@@ -6,26 +6,11 @@ day: 1
 type: "walk-thru"
 ---
 
+
+
 <img src="https://i.imgur.com/efjnAna.jpg">
 
 # Deploying a Django App to Heroku
-
-
-
-<br>
-<br>
-<br>
-
-
-[Click here](https://generalassembly.zoom.us/rec/share/cAjclB1d2DNGfibCb8-JsbVnfMhQZ_pL8GM5yNRGa14MEWTgnp9_3MSZkXf9mvu1.JjYFCAv51FeHACFW?startTime=1626913960000) to access recording
-
-<br>
-<br>
-<br>
-
-
-
-
 
 ## Road Map
 
@@ -40,16 +25,7 @@ type: "walk-thru"
 9. Create the superuser
 10. Test the Admin Portal
 
-
-<br>
-<br>
-<br>
-
-
-
 ## 1. Preparation
-
-<br>
 
 ### `cd` Into the Project's Folder
 
@@ -59,13 +35,7 @@ type: "walk-thru"
 
 - Open a terminal in VS Code: `ctrl + backtick`
 
-- Make sure that the `master` branch is checked out
-
-<br>
-<br>
-<br>
-
-
+- Make sure that the `main` branch is checked out
 
 ### Heroku Account & Toolbelt
 
@@ -75,7 +45,7 @@ You already got set up with Heroku in Unit 2.
 
 Verify that the [Heroku Toolbelt](https://devcenter.heroku.com/articles/heroku-cli) is installed by typing the following in terminal:
 
-```shell
+```
 $ heroku
 ```
 
@@ -83,39 +53,27 @@ You should see a list of commands available.
 
 Run the following command to check if you're logged in:
 
-```shell
+```
 $ heroku auth:token
 ```
 
 If not logged in, type the following and enter your credentials:
 
-```shell
+```
 $ heroku login
 ```
-
-
-<br>
-<br>
-<br>
-
-
 
 ### Create the App on Heroku
 
 After ensuring that you're logged in, you can create the app on Heroku as follows:
 
-```shell
+```
 $ heroku create <your preferred name here>
 ```
 
 Replace `<your preferred name here>` with the name you want (no spaces). Your name has to be unique on Heroku, so you might have to be a little creative.
 
 The name you choose will be the name of the app in your Heroku dashboard and the name used for the subdomain in the URL of your hosted app, e.g., `https://catcollector.herokuapp.com`
-
-<br>
-<br>
-<br>
-
 
 
 ## 2. Ready the Django Project
@@ -124,26 +82,15 @@ Django projects need to be configured to be deployed.
 
 Django has detailed deployment [docs](https://docs.djangoproject.com/en/3.0/howto/deployment/) and a [checklist](https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/), however, there is dedicated package we will use to make deploying to Heroku much easier.
 
+> Note:  If you ever deploy a Django app used in production, you'll want to review the [checklist](https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/) mentioned above and implement the additional security precautions.
 
-<br>
-<br>
-<br>
+### Install `django-on-heroku`
 
+First, let's install [`django-on-heroku`](https://github.com/pkrefta/django-on-heroku) which is a Python package that will help with the deployment process:
 
-
-### Install `django-heroku`
-
-First, let's install [`django-heroku`](https://github.com/heroku/django-heroku) which is a Python package that will help with the deployment process:
-
-```shell
-$ pipenv install django-heroku
 ```
-
-<br>
-<br>
-<br>
-
-
+$ pip3 install django-on-heroku
+```
 
 ### Update `settings.py`
 
@@ -155,51 +102,38 @@ However, the `django-heroku` package makes the necessary changes to `settings.py
 # Other settings above
 
 # Configure Django App for Heroku.
-import django_heroku
-django_heroku.settings(locals())
+import django_on_heroku
+django_on_heroku.settings(locals())
 ```
 
-> Note that the import name is `django_heroku` instead of `django-heroku` we used when installing.
-
-
-<br>
-<br>
-<br>
-
+> Note that the import name is `django_on_heroku` instead of `django-on-heroku` we used when installing.
 
 
 ### Install `gunicorn`
 
-The built-in development server we've been running with `python manage.py runserver` is not suitable for deployment.
+The built-in development server we've been running with `python3 manage.py runserver` is not suitable for deployment.
 
 `gunicorn` is a Python HTTP Server designed to work with Linux/Unix servers such as Heroku's.
 
 Let's install it:
 
-```shell
-$ pipenv install gunicorn
 ```
-
-
-<br>
-<br>
-<br>
-
-
+$ pip3 install gunicorn
+```
 
 ### Create & Configure `Procfile`
 
 Heroku needs a file named **Procfile** to know how to run a Python app.
 
-Let's create one - be sure to name it exactly as `Procfile` (capitalized and without a file extension):
+Let's create one - be sure to name it **exactly** as `Procfile` (capitalized and without a file extension):
 
-```shell
+```
 $ touch Procfile
 ```
 
 We only need to add a single line of code in **Procfile**. However, it's important to replace the `<your project name here>` with your actual project name:
 
-```shell
+```
 web: gunicorn <your project name here>.wsgi
 ```
 
@@ -207,14 +141,8 @@ The project name should be the same as your project's folder name, however, you 
 
 ```python
 WSGI_APPLICATION = 'catcollector.wsgi.application'
-# catcollector is the project name
+# ^^^ catcollector is the project name
 ```
-
-
-<br>
-<br>
-<br>
-
 
 ### Create a `requirements.txt`
 
@@ -222,47 +150,34 @@ The `package.json` file we used in Node apps informed Heroku which Node modules 
 
 The equivalent in a Python app is the `requirements.txt` file.
 
-`pip` has a `freeze` command for listing the installed Python packages. Let's check it out:
+`pip3` has a `freeze` command for listing the installed Python packages. Let's check it out:
 
-```shell
-$ pip freeze
+```
+$ pip3 freeze
 ```
 
 That list of packages is in the correct format for the `requirements.txt` file.
 
-Here's how we use Unix/Linux's `>` to redirect the output of `pip freeze` to a `requirements.txt` file (please spell correctly):
+Here's how we use Unix/Linux's `>` to redirect the output of `pip3 freeze` to a `requirements.txt` file (please spell correctly):
 
-```shell
-$ pip freeze > requirements.txt
+```
+$ pip3 freeze > requirements.txt
 ```
 
 Since we're not using [virtual environments](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/), the list of requirements may actually include packages the Django project does not need. This is not a problem, the first deployment just might take a little longer as Heroku installs the extra packages.
 
 However, the `requirements.txt` file may be edited to remove packages that you **are sure** your project doesn't need.
 
-> Note:  If you install any additional Python packages during development after your initial deployment, you will need to run `pip freeze > requirements.txt` again to update the **requirements.txt** after the install of the additional Python package.
-
-
-<br>
-<br>
-<br>
-
+> Note:  If you install any additional Python packages during development after your initial deployment, you will need to run `pip3 freeze > requirements.txt` again to update the **requirements.txt** after the install of the additional Python package.
 
 ## 3. Commit the Changes
 
-Now let's commit the changes made to the project (make sure that you're on the `master` branch):
+Now let's commit the changes made to the project (make sure that you're on the `main` branch):
 
-```shell
+```
 $ git add -A
 $ git commit -m "Config deployment"
 ```
-
-
-<br>
-<br>
-<br>
-
-
 
 ## 4. Deploy to Heroku
 
@@ -270,8 +185,8 @@ The `heroku` remote was added to the repo with the `heroku create` command ran e
 
 So, deploying the first time and re-deploying later is as easy as running this command:
 
-```shell
-$ git push heroku master
+```
+$ git push heroku main
 ```
 
 The first deployment will take considerably longer than subsequent deployments because Heroku will have to install all of the Python packages.  However, during re-deployments, Heroku will only install/uninstall changes made to `requirements.txt`.
@@ -280,20 +195,7 @@ Read the output during deployment carefully. You'll need to address the errors i
 
 In the case of a successful first deployment - **the app is still not quite ready to run**...
 
-
-<br>
-<br>
-<br>
-
-
-
 ## 5. Migrate the Database Migrations
-
-<br>
-<br>
-
-
-
 
 ### Checking that Heroku Created a PostgreSQL Database
 
@@ -301,13 +203,13 @@ If a Django project is configured to use a PostgreSQL, Heroku automatically dete
 
 You can run the following command to verify this:
 
-```shell
+```
 $ heroku pg
 ```
 
 You should see an output similar to this:
 
-```shell
+```
 === DATABASE_URL
 Plan:                  Hobby-dev
 Status:                Available
@@ -323,24 +225,17 @@ Continuous Protection: Off
 Add-on:                postgresql-parallel-89032
 ```
 
-<br>
-<br>
-<br>
-
-
-
-
 ### Check and Migrate the Migrations
 
 First, let's run the command that shows us a list and status of the migrations for our local project:
 
-```shell
-$ python manage.py showmigrations
+```
+$ python3 manage.py showmigrations
 ```
 
 The output for the Cat Collector app looks like this:
 
-```shell
+```
 admin
  [X] 0001_initial
  [X] 0002_logentry_remove_auto_add
@@ -369,17 +264,17 @@ sessions
  [X] 0001_initial
 ```
 
-We can run most any command we can locally on the Heroku server by prefacing the command with `heroku run`
+We can run most any command we can locally on the Heroku server by prefacing the command with `heroku run` and substituting `python` for `python3` (Python 3 on Heroku's servers are configured as `python`).
 
 Let's check out the migrations for the deployed app:
 
-```shell
+```
 $ heroku run python manage.py showmigrations
 ```
 
 Which generates the following output for Cat Collector:
 
-```shell
+```
 admin
  [ ] 0001_initial
  [ ] 0002_logentry_remove_auto_add
@@ -410,18 +305,11 @@ sessions
 
 Yup, the unchecked migrations tells us that they need to be migrated:
 
-```shell
+```
 $ heroku run python manage.py migrate
 ```
 
 Lots of `OK`s is a good sign!
-
-
-<br>
-<br>
-<br>
-
-
 
 ## 6. Set Environment Variables
 
@@ -429,34 +317,33 @@ We need to set environment variables (secrets) on Heroku in the same way we need
 
 The best way is to set each key=value pair using the `heroku config:set` command:
 
-```shell
+```
 $ heroku config:set AWS_ACCESS_KEY_ID=AKIAJYO6WFUBRZUI6ZNQ
 ```
 
-> Note: If setting AWS keys from Boto3, ensure the key names are in all caps (they are lowercase in `~/.aws/credentials`).
+As usual, if using zsh, you may have to quote the key=value pair like this:
+
+```
+% heroku config:set "AWS_ACCESS_KEY_ID=AKIAJYO6WFUBRZUI6ZNQ"
+```
+
+> Note: Be sure to set all of the entries in the `.env` file.
 
 Setting the environment variables via the command line automatically restarts the server - which is necessary.  If you set the _config vars_ in Heroku's Dashboard, it won't restart the server.  However, you can restart the server manually using<br>`$ heroku restart`
 
 After you are finished setting all of the environment variables, you can verify them as follows:
 
-```shell
+```
 $ heroku config
 ```
 
 Included in the output will be a `DATABASE_URL` that Heroku automatically added.
 
-
-<br>
-<br>
-<br>
-
-
-
 ## 7. Open the Application
 
 Let's check it out!
 
-```shell
+```
 $ heroku open
 ```
 
@@ -464,44 +351,23 @@ Since the database is new, there will not be any users or data.  After signing u
 
 <img src="https://i.imgur.com/7hpQqOU.png">
 
-
-<br>
-<br>
-<br>
-
-
-
 ## 8. Troubleshooting
 
 The following command shows Heroku's log for our app and is useful for troubleshooting.  The log also contains the output from your app's `print()` statements:
 
-```shell
+```
 $ heroku logs
 ``` 
-
-
-<br>
-<br>
-<br>
-
-
 
 ## 9. Create the superuser
 
 Because the database is "fresh", there's no superuser yet.
 
-```shell
+```
 $ heroku run python manage.py createsuperuser
 ```
 
 It's the same process as locally, just a bit slower.
-
-<br>
-<br>
-<br>
-
-
-
 
 ## 10. Test the Admin Portal
 
@@ -513,11 +379,6 @@ to checkout the admin portal:
 
 <img src="https://i.imgur.com/fFsrfae.png">
 
-
-<br>
-<br>
-<br>
-
-
 ### Congrats!
+
 
