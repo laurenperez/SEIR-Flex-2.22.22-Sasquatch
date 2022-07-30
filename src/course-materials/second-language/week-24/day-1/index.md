@@ -4,7 +4,7 @@ title: "Week 24 - Day 1"
 week: 24
 day: 1
 type: "homepage"
-topics: "CS Week"
+topics: "CS Week : Binary Search & Linked Lists"
 ---
 
 

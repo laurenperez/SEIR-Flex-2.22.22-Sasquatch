@@ -4,7 +4,7 @@ title: "Week 23 - Day 3"
 week: 23
 day: 3
 type: "homepage"
-topics: "CS Week"
+topics: "CS Week : Big O, Recursion, & Sorts"
 ---
 
 
