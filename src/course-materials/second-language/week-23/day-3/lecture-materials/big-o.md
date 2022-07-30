@@ -1,3 +1,11 @@
+---
+track: "Second Language"
+title: "Big O Notation"
+week: 23
+day: 3
+type: "lecture"
+---
+
 # Big-O Notation Exercises
 
 What is the worst-case time complexity for the following algorithms?

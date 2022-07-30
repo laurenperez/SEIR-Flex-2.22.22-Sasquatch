@@ -1,4 +1,10 @@
-
+---
+track: "Second Language"
+title: "Divide and Conquer Sorting"
+week: 23
+day: 3
+type: "lecture"
+---
 # Divide and Conquer Sorting
 
 ## Learning Objectives

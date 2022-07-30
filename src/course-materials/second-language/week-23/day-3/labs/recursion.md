@@ -1,6 +1,17 @@
+---
+track: "Second Language"
+title: "Recursion"
+week: 23
+day: 3
+type: "lab"
+---
+
 ### Write code inside the functions
 You will have to figure out what parameters to include
 All functions must use recursion
+
+
+[Exercise Repo Here](https://git.generalassemb.ly/shawkitajima/computer-science/tree/main/recursion)
 
 ```javascript
 function findMax(){

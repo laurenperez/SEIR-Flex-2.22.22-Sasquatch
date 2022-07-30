@@ -1,4 +1,10 @@
-
+---
+track: "Second Language"
+title: "Binary Search Trees"
+week: 24
+day: 2
+type: "lecture"
+---
 # Binary Trees
 
 ## Learning Objectives

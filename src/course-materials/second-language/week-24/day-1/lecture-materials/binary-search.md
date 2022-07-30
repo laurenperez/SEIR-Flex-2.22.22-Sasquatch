@@ -1,3 +1,10 @@
+---
+track: "Second Language"
+title: "Binary Search"
+week: 24
+day: 1
+type: "lecture"
+---
 
 # Binary Searches
 

@@ -1,4 +1,10 @@
-
+---
+track: "Second Language"
+title: "Linked Lists"
+week: 24
+day: 1
+type: "lecture"
+---
 # Linked Lists
 
 ## Learning Objectives

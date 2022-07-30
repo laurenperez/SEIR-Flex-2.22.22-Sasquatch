@@ -1,4 +1,15 @@
+---
+track: "Second Language"
+title: "Linked Lists"
+week: 24
+day: 1
+type: "lab"
+---
+
 ### Linked Lists
+
+
+[Exercise Repo Here](https://git.generalassemb.ly/shawkitajima/computer-science/tree/main/linked-lists)
 
 ``` JS
 class Node{

@@ -1,4 +1,14 @@
+---
+track: "Second Language"
+title: "Binary Search Trees"
+week: 24
+day: 2
+type: "lab"
+---
+
 ### Binary Search Trees
+
+[Exercise Repo Here](https://git.generalassemb.ly/shawkitajima/computer-science/tree/main/binary-trees)
 
 
 ``` JS

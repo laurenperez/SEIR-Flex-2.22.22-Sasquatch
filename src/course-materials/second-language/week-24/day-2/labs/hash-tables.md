@@ -1,4 +1,14 @@
+---
+track: "Second Language"
+title: "Hash Tables"
+week: 24
+day: 2
+type: "lab"
+---
+
 ### Hash Tables
+
+[Exercise Repo Here](https://git.generalassemb.ly/shawkitajima/computer-science/tree/main/hash-tables)
 
 ``` JS
 

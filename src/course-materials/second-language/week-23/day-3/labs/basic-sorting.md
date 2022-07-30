@@ -1,5 +1,13 @@
+---
+track: "Second Language"
+title: "Basic Sorting"
+week: 23
+day: 3
+type: "lab"
+---
 ### Bubble Sort
 
+[Exercise Repo Here](https://git.generalassemb.ly/shawkitajima/computer-science/tree/main/basic-sorting)
 
 ``` JS
 function bubbleSort(array) {

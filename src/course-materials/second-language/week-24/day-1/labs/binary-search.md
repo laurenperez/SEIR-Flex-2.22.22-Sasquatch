@@ -1,4 +1,14 @@
+---
+track: "Second Language"
+title: "Binary Search"
+week: 24
+day: 1
+type: "lab"
+---
+
 ### Binary Search
+
+[Exercise Repo Here](https://git.generalassemb.ly/shawkitajima/computer-science/tree/main/binary-searches)
 
 ```JS 
 function binarySearch(arr, element){

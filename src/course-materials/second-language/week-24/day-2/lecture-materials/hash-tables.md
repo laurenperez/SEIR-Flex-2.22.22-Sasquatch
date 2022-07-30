@@ -1,4 +1,10 @@
-
+---
+track: "Second Language"
+title: "Hash Tables"
+week: 24
+day: 2
+type: "lecture"
+---
 # Hash Tables
 
 ## Learning Objectives

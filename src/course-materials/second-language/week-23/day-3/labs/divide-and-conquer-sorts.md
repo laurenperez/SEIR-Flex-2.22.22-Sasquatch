@@ -1,3 +1,13 @@
+---
+track: "Second Language"
+title: "Divide and Conquer Sorting"
+week: 23
+day: 3
+type: "lab"
+---
+
+[Exercise Repo Here](https://git.generalassemb.ly/shawkitajima/computer-science/tree/main/divide-and-conquer-sorting)
+
 ### Merge Sort
 
 ``` JS
