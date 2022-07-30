@@ -30,4 +30,5 @@ topics: "CS Week : Big O, Recursion, & Sorts"
 - [**Lecture:** Divide and Conquer Sorts](/second-language/week-23/day-3/lecture-materials/divide-and-conquer-sorts/)
 - [**Exercises:** Merge and Quick Sorts](/second-language/week-23/day-3/labs/divide-and-conquer-sorts/)
 
-
+#### Capstone requirements
+- [**Capstone Project Requirements**: Individual Only](/unit-projects/capstone-project-requirements)

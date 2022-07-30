@@ -18,7 +18,12 @@ topics: "Capstone Project Kickoff & Portfolio Guide"
 
 - Other rooms will have mock interview questions and materials for pairs to interview each other. 
 
-#### Capstone Project Kickoff & Portfolio Guide
+#### Capstone Project Kickoff! 
+
+
+- [**Capstone Project Requirements**: Individual Only](/unit-projects/capstone-project-requirements)
+
+#### Portfolio Guide
 
 - [**Resource:** Guide to Building a Portfolio](/second-language/week-24/day-3/lecture-materials/guide-to-building-a-portfolio)
 
